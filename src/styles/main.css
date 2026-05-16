@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@source "./pages/**/*.{astro,html,js,jsx,ts,tsx}";
+@source "./components/**/*.{astro,html,js,jsx,ts,tsx}";
+@source "./layouts/**/*.{astro,html,js,jsx,ts,tsx}";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
