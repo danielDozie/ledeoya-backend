@@ -11,19 +11,20 @@
     "kyro:generate": "kyro generate"
   },
   "dependencies": {
-    "astro": "^6.3.1",
     "@astrojs/react": "^5.0.4",
+    "@kyro-cms/admin": "file:../kyro-cms/admin",
+    "@kyro-cms/core": "file:../kyro-cms",
     "@tailwindcss/vite": "^4.0.0",
-    "tailwindcss": "^4.0.0",
+    "astro": "^6.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@kyro-cms/core": "latest",
-    "@kyro-cms/admin": "latest"
+    "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.7.3",
     "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0"
+    "@types/react-dom": "^19.0.0",
+    "playwright": "^1.60.0",
+    "typescript": "^5.7.3"
   },
   "overrides": {
     "vite": "^7"

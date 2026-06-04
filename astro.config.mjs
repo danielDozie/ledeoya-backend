@@ -6,9 +6,11 @@ import tailwind from '@tailwindcss/vite';
 
 export default defineConfig({
   output: 'server',
-  integrations: [react(), kyro({ adminPath: '/admin', apiPath: '/api' }), kyroAdmin({ basePath: '/admin', apiPath: '/api' })],
+  integrations: [react(), kyro({ adminPath: '/admin', apiPath: '/api', enableGraphQL: true, enableTRPC: true, enableWebSocket: true }), kyroAdmin({ basePath: '/admin', apiPath: '/api' })],
   vite: {
-    plugins: [tailwind()],
+    plugins: [
+      tailwind()
+    ],
   },
   server: {
     port: 4321,
