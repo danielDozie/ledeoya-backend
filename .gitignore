@@ -6,3 +6,7 @@ data/
 .env
 .env.local
 .DS_Store
+public/
+*.log
+.idea/
+.vscode/
