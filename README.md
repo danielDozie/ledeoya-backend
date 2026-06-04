@@ -1,61 +1,93 @@
 # Ledeoya
 
-A small Astro site scaffolded with Kyro CMS helpers and Tailwind/Vite tooling.
+A custom Astro site with Kyro CMS integration, React support, Tailwind CSS, and Vite.
 
 ## Overview
 
-This repository contains the `ledeoya` website built with Astro. It integrates with a local Kyro CMS (referenced via `file:../kyro-cms`) and defines content collections under `src/ledeoyaCollections` for destinations, testimonials, trips, messages, and services.
+`ledeoya` is an Astro project that uses Kyro CMS for data management and content collections. The site runs on `localhost:4321` and exposes a CMS admin dashboard at `/admin`.
 
-## Quick Start
+### Key features
 
-### Requirements
+- Astro with React support via `@astrojs/react`
+- Tailwind CSS integration with Vite
+- Kyro CMS admin and API powered by `@kyro-cms/core` and `@kyro-cms/admin`
+- Custom content collections in `src/ledeoyaCollections`
+- Local Kyro package references using `file:../kyro-cms`
 
-- Node.js 18+ (or a compatible version for your environment)
-- pnpm (preferred; `pnpm-lock.yaml` is included)
+## Requirements
 
-### Install
+- Node.js 18+ (or compatible)
+- `pnpm` (preferred)
+- A valid `DATABASE_URL` and `APP_SECRET` for Kyro CMS
 
-Install dependencies with pnpm:
+## Installation
+
+Install dependencies:
 
 ```bash
 pnpm install
 ```
 
-If you prefer `npm` or `yarn`, use `npm install` or `yarn` instead.
+If you do not have `pnpm` installed, use:
 
-### Development
+```bash
+npm install -g pnpm
+``` 
 
-Start the local dev server:
+## Environment
+
+Create a `.env` file in the repository root with at least the following variables:
+
+```env
+DATABASE_URL="your-database-connection-string"
+APP_SECRET="your-application-secret"
+```
+
+Kyro uses these variables for database access and auth.
+
+## Development
+
+Start the Astro development server:
 
 ```bash
 pnpm dev
 ```
 
-Run the Kyro CMS dev server (for local kyro packages):
+If the Kyro packages are available locally, you can also start the Kyro dev tooling:
 
 ```bash
 pnpm run kyro:dev
 ```
 
-Generate Kyro types/content during development:
+Generate types and content artifacts from Kyro configuration:
 
 ```bash
 pnpm run kyro:generate
 ```
 
-## Admin Dashboard
+## Admin dashboard
 
-Visit [http://localhost:4321/admin](http://localhost:4321/admin) to access the admin UI. The first user to register will automatically be granted super admin privileges.
+Open the admin UI in a browser:
 
-## Build & Preview
+```text
+http://localhost:4321/admin
+```
 
-Build the site for production:
+The Kyro admin is configured with:
+
+- `adminPath: '/admin'`
+- `apiPath: '/api'`
+- GraphQL, tRPC, and WebSocket support enabled
+
+## Build & preview
+
+Build the production site:
 
 ```bash
 pnpm build
 ```
 
-Preview the production build locally:
+Preview the generated build locally:
 
 ```bash
 pnpm preview
@@ -63,25 +95,39 @@ pnpm preview
 
 ## Project structure
 
-- `astro.config.mjs` — Astro configuration
-- `src/pages` — Astro pages (site routes)
-- `src/styles/main.css` — Global styles
-- `src/ledeoyaCollections/*` — Content collection definitions used by Kyro/collections
-- `public/uploads/Gratis/` — Static upload folder (images, assets)
-- `kyro.config.ts` — Kyro configuration (CMS)
+- `astro.config.mjs` — Astro configuration and Kyro integration
+- `kyro.config.ts` — Kyro CMS configuration and collection registration
+- `src/pages` — Astro page routes
+- `src/styles/main.css` — Global CSS
+- `src/ledeoyaCollections` — Kyro collection definitions
+- `public/uploads/Gratis/` — Static upload assets
 
-## Notes on Kyro integration
+## Content collections
 
-This project references local Kyro packages:
+The project includes these Kyro collections:
 
-- `@kyro-cms/admin` and `@kyro-cms/core` are locally linked via `file:../kyro-cms` in `package.json`.
+- `trips`
+- `destinations`
+- `services`
+- `testimonials`
+- `messages`
 
-When working with Kyro locally, ensure the `../kyro-cms` path exists and is built/linked appropriately.
+It also uses starter content templates from Kyro.
+
+## Kyro integration notes
+
+The project depends on local Kyro packages in `package.json`:
+
+- `@kyro-cms/admin: file:../kyro-cms/admin`
+- `@kyro-cms/core: file:../kyro-cms`
+
+If these paths do not exist, install or link them before running the site.
 
 ## Contributing
 
-- Open an issue or create a PR for fixes and enhancements.
-- If you modify collection types in `src/ledeoyaCollections`, run `pnpm run kyro:generate` to keep generated types in sync.
+- Update collection definitions in `src/ledeoyaCollections` as needed.
+- Run `pnpm run kyro:generate` after modifying collections.
+- Use `pnpm dev` for local development and `pnpm build` before creating production artifacts.
 
 ## License
 
@@ -89,4 +135,4 @@ Add your project license here.
 
 ## Acknowledgements
 
-Built with Astro, Tailwind, and Kyro CMS.
+Built with Astro, Tailwind CSS, React, and Kyro CMS.
