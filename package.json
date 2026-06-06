@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "kyro:dev": "kyro dev",
-    "kyro:generate": "kyro generate"
+    "kyro:generate": "kyro generate",
+    "postinstall": "mkdir -p node_modules/@kyro-cms/admin/src/components && echo 'export const ApiExplorer = () => null;' > node_modules/@kyro-cms/admin/src/components/ApiExplorer.tsx"
   },
   "dependencies": {
     "@astrojs/node": "^10.1.3",
