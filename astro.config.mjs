@@ -21,11 +21,11 @@ export default defineConfig({
       tailwind()
     ],
     ssr: {
-      external: ["better-sqlite3", "pg", "mongodb", "ioredis"]
+      external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"]
     },
     build: {
       rollupOptions: {
-        external: ["better-sqlite3", "pg", "mongodb", "ioredis"]
+        external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"]
       }
     }
   },

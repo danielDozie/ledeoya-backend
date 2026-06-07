@@ -1,11 +1,15 @@
-FROM node:20-bullseye-slim AS build
+FROM node:22-bullseye-slim AS build
 
 WORKDIR /app
 
 ENV PNPM_HOME="/home/node/.local/share/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends python3 build-essential \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN corepack enable && corepack prepare pnpm@9 --activate
 
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
