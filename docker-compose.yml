@@ -8,8 +8,8 @@ services:
     image: ledeoya-app:latest
     ports:
       - "4321:4321"
-    env_file:
-      - .env
+    # env_file:
+    #   - .env
     environment:
       NODE_ENV: production
       APP_SECRET: ${APP_SECRET}
