@@ -13,8 +13,8 @@
   "dependencies": {
     "@astrojs/node": "^10.1.3",
     "@astrojs/react": "^5.0.4",
-    "@kyro-cms/admin": "^0.9.5",
-    "@kyro-cms/core": "^0.9.5",
+    "@kyro-cms/admin": "file:../kyro-cms/admin",
+    "@kyro-cms/core": "file:../kyro-cms",
     "@tailwindcss/vite": "^4.0.0",
     "astro": "^6.3.1",
     "react": "^19.0.0",

@@ -20,14 +20,14 @@ export default defineConfig({
     plugins: [
       tailwind()
     ],
-    ssr: {
-      external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"]
-    },
-    build: {
-      rollupOptions: {
-        external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"]
-      }
-    }
+    // ssr: {
+    //   external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"]
+    // },
+    // build: {
+    //   rollupOptions: {
+    //     external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"]
+    //   }
+    // }
   },
   server: {
     port: 4321,
