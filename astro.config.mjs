@@ -20,14 +20,25 @@ export default defineConfig({
     plugins: [
       tailwind()
     ],
-    // ssr: {
-    //   external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"]
-    // },
-    // build: {
-    //   rollupOptions: {
-    //     external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"]
-    //   }
-    // }
+    ssr: {
+      noExternal: [
+        "@tiptap/core", "@tiptap/react", "@tiptap/pm", "@tiptap/starter-kit",
+        "@tiptap/extension-link", "@tiptap/extension-image", "@tiptap/extension-text-align",
+        "@tiptap/extension-underline", "@tiptap/extension-highlight",
+        "@tiptap/extension-task-list", "@tiptap/extension-task-item",
+        "@tiptap/extension-text-style", "@tiptap/extension-color",
+        "prosemirror-model", "prosemirror-state", "prosemirror-view",
+        "prosemirror-schema-list", "prosemirror-commands", "prosemirror-keymap",
+        "prosemirror-transform", "prosemirror-inputrules",
+      ],
+      external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"],
+    },
+    optimizeDeps: {
+      include: [
+        "@kyro-cms/admin",
+        "lowlight", "highlight.js", "highlight.js/lib/core", "highlight.js/lib/languages/*",
+      ],
+    },
   },
   server: {
     port: 4321,
