@@ -13,7 +13,7 @@ export default defineConfig({
   }),
   integrations: [
     react(), 
-    kyro({ adminPath: '/admin', apiPath: '/api', enableGraphQL: true, enableTRPC: true, enableWebSocket: true }), 
+    kyro({ adminPath: '/admin', apiPath: '/api'}), 
     kyroAdmin({ basePath: '/admin', apiPath: '/api' })
   ],
   vite: {

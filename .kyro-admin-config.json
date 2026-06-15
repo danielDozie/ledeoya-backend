@@ -6001,12 +6001,6 @@
           "label": "API Access",
           "fields": [
             {
-              "name": "restEnabled",
-              "type": "checkbox",
-              "label": "Enable REST API",
-              "defaultValue": true
-            },
-            {
               "name": "graphqlEnabled",
               "type": "checkbox",
               "label": "Enable GraphQL",
@@ -6229,23 +6223,6 @@
           ]
         },
         {
-          "name": "footer_social_links",
-          "type": "array",
-          "label": "Footer Social Links",
-          "fields": [
-            {
-              "name": "social_icon",
-              "type": "text",
-              "label": "Social Icon"
-            },
-            {
-              "name": "social_url",
-              "type": "text",
-              "label": "Social URL"
-            }
-          ]
-        },
-        {
           "name": "footer_menu",
           "type": "array",
           "label": "Footer Menu",
@@ -6264,8 +6241,20 @@
           "fields": [
             {
               "name": "button",
-              "type": "button",
-              "label": "Button"
+              "type": "group",
+              "label": "Button",
+              "fields": [
+                {
+                  "name": "text",
+                  "type": "text",
+                  "label": "Button Text"
+                },
+                {
+                  "name": "url",
+                  "type": "text",
+                  "label": "Button URL"
+                }
+              ]
             }
           ]
         },

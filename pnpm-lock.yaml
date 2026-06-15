@@ -15,11 +15,11 @@ importers:
         specifier: ^5.0.4
         version: 5.0.7(@types/node@25.9.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(jiti@2.7.0)(lightningcss@1.32.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@kyro-cms/admin':
-        specifier: ^0.10.10
-        version: 0.10.10(@babel/runtime@7.29.7)(@codemirror/autocomplete@6.20.3)(@codemirror/language@6.12.3)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.0)(@codemirror/theme-one-dark@6.1.3)(@floating-ui/dom@1.7.6)(@kyro-cms/core@0.10.10(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3))(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@types/node@25.9.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(codemirror@6.0.2)(graphql@16.14.2)(jiti@2.7.0)(lightningcss@1.32.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rollup@4.62.0)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0))
+        specifier: ^0.10.11
+        version: 0.10.11(@babel/runtime@7.29.7)(@codemirror/autocomplete@6.20.3)(@codemirror/language@6.12.3)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.0)(@codemirror/theme-one-dark@6.1.3)(@floating-ui/dom@1.7.6)(@kyro-cms/core@0.10.11(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3))(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@types/node@25.9.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(codemirror@6.0.2)(graphql@16.14.2)(jiti@2.7.0)(lightningcss@1.32.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rollup@4.62.0)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0))
       '@kyro-cms/core':
-        specifier: ^0.10.10
-        version: 0.10.10(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3)
+        specifier: ^0.10.11
+        version: 0.10.11(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3)
       '@tailwindcss/vite':
         specifier: ^4.0.0
         version: 4.3.1(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0))
@@ -991,16 +991,16 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@kyro-cms/admin@0.10.10':
-    resolution: {integrity: sha512-bRT0aac0kNqKoEpA+RK3IDDx/ikOI+5ffW2nCFnZHe3Q9MUV3G6mZrHQdaueixIfqbom8ufFBgvSLIkK0knhkA==}
+  '@kyro-cms/admin@0.10.11':
+    resolution: {integrity: sha512-6DYSIB5Esvq0Y6TwyjEd9ZCbT1BYLTDhuRSEdzJV0a0c1rlkozxkoHbVWfJ7G0clqq4l1g2iBJujmkU9XqzvkA==}
     engines: {node: '>=22'}
     peerDependencies:
       '@kyro-cms/core': ^0.10.0
       react: ^19.0.0
       react-dom: ^19.0.0
 
-  '@kyro-cms/core@0.10.10':
-    resolution: {integrity: sha512-9PkZUCuQ9+sOIjMMHmrpKxZlEWKDZDOvFnRdiQ46QVaAQMlGPOrcLJZCzcpVDENy2OCsMdOAcF6gGuwVcVEVUg==}
+  '@kyro-cms/core@0.10.11':
+    resolution: {integrity: sha512-XkOSyK85an+TTGWgHk/wS+phctMYdk0mUpjw1i57YSbpCWrFra3nCWqjTKMXImlOwfItCV5S84iEMWHEpPIRVA==}
     engines: {node: '>=22'}
     hasBin: true
     peerDependencies:
@@ -4889,7 +4889,7 @@ snapshots:
       '@tanstack/react-virtual': 3.14.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      use-sync-external-store: 1.6.0(react@19.2.7)
+      use-sync-external-store: 1.5.0(react@19.2.7)
 
   '@img/colour@1.1.0': {}
 
@@ -5020,7 +5020,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kyro-cms/admin@0.10.10(@babel/runtime@7.29.7)(@codemirror/autocomplete@6.20.3)(@codemirror/language@6.12.3)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.0)(@codemirror/theme-one-dark@6.1.3)(@floating-ui/dom@1.7.6)(@kyro-cms/core@0.10.10(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3))(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@types/node@25.9.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(codemirror@6.0.2)(graphql@16.14.2)(jiti@2.7.0)(lightningcss@1.32.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rollup@4.62.0)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0))':
+  '@kyro-cms/admin@0.10.11(@babel/runtime@7.29.7)(@codemirror/autocomplete@6.20.3)(@codemirror/language@6.12.3)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.0)(@codemirror/theme-one-dark@6.1.3)(@floating-ui/dom@1.7.6)(@kyro-cms/core@0.10.11(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3))(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@types/node@25.9.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(codemirror@6.0.2)(graphql@16.14.2)(jiti@2.7.0)(lightningcss@1.32.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rollup@4.62.0)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0))':
     dependencies:
       '@astrojs/node': 10.1.4(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))
       '@astrojs/react': 5.0.7(@types/node@25.9.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(jiti@2.7.0)(lightningcss@1.32.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -5041,7 +5041,7 @@ snapshots:
       '@dnd-kit/sortable': 10.0.0(@dnd-kit/core@6.3.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       '@dnd-kit/utilities': 3.2.2(react@19.2.7)
       '@graphiql/react': 0.37.7(@types/node@25.9.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(graphql@16.14.2)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(use-sync-external-store@1.5.0(react@19.2.7))
-      '@kyro-cms/core': 0.10.10(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3)
+      '@kyro-cms/core': 0.10.11(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3)
       '@tailwindcss/vite': 4.3.1(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0))
       '@tiptap/extension-color': 3.26.1(@tiptap/extension-text-style@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1)))
       '@tiptap/extension-highlight': 3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))
@@ -5124,7 +5124,7 @@ snapshots:
       - vite
       - yaml
 
-  '@kyro-cms/core@0.10.10(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3)':
+  '@kyro-cms/core@0.10.11(@tanstack/react-query@5.101.0(react@19.2.7))(@tiptap/extension-list@3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)(@types/pg@8.20.0)(astro@6.4.6(@types/node@25.9.3)(idb-keyval@6.2.5)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))(happy-dom@20.10.3)(idb-keyval@6.2.5)(react@19.2.7)(typescript@5.9.3)':
     dependencies:
       '@aws-sdk/client-s3': 3.1068.0
       '@aws-sdk/s3-request-presigner': 3.1068.0
@@ -6042,7 +6042,7 @@ snapshots:
       fast-equals: 5.4.0
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      use-sync-external-store: 1.6.0(react@19.2.7)
+      use-sync-external-store: 1.5.0(react@19.2.7)
     optionalDependencies:
       '@tiptap/extension-bubble-menu': 3.26.1(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)
       '@tiptap/extension-floating-menu': 3.26.1(@floating-ui/dom@1.7.6)(@tiptap/core@3.26.1(@tiptap/pm@3.26.1))(@tiptap/pm@3.26.1)
