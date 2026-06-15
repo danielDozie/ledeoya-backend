@@ -204,6 +204,18 @@
                       "label": "Hero Section",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "isMultiScreen",
                           "type": "checkbox",
                           "label": "Enable Multi-Screen Slides (Carousel)",
@@ -468,6 +480,18 @@
                       "label": "Card Block",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "isMultiCard",
                           "type": "checkbox",
                           "label": "Enable Multicard Layout",
@@ -728,6 +752,18 @@
                       "label": "Feature Split (Text & Media)",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "title",
                           "type": "text",
                           "label": "Title"
@@ -960,6 +996,18 @@
                       "label": "Feature Grid",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -1162,6 +1210,18 @@
                       "label": "CTA Banner",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "headline",
                           "type": "text",
                           "label": "Headline"
@@ -1353,6 +1413,18 @@
                       },
                       "label": "Testimonials",
                       "fields": [
+                        {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
@@ -1580,6 +1652,18 @@
                       "label": "FAQ Section",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -1775,6 +1859,18 @@
                       },
                       "label": "Stats / Metrics",
                       "fields": [
+                        {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
@@ -1972,6 +2068,18 @@
                       "label": "Logo Cloud / Partners",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -2158,6 +2266,18 @@
                       },
                       "label": "Pricing Plans",
                       "fields": [
+                        {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
@@ -2404,6 +2524,18 @@
                       "label": "Team Showcase",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -2626,6 +2758,18 @@
                       "label": "Recent Posts Feed",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -2829,6 +2973,18 @@
                       "label": "Process Steps / Timeline",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -3026,6 +3182,18 @@
                       "label": "Form Embed",
                       "fields": [
                         {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
+                        {
                           "name": "title",
                           "type": "text",
                           "label": "Form Title"
@@ -3201,6 +3369,18 @@
                       },
                       "label": "Cinematic Video Showcase",
                       "fields": [
+                        {
+                          "name": "anchorId",
+                          "type": "text",
+                          "admin": {
+                            "hidden": true
+                          },
+                          "hooks": {
+                            "beforeChange": [
+                              null
+                            ]
+                          }
+                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
