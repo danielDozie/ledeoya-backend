@@ -23,6 +23,8 @@ WORKDIR /app
 ENV PNPM_HOME="/home/node/.local/share/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 
+RUN corepack enable && corepack prepare pnpm@9 --activate
+
 COPY --from=build /app /app
 
 ENV NODE_ENV=production
