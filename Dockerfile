@@ -33,4 +33,4 @@ COPY --from=build /app/dist ./dist
 COPY --from=deps /app/node_modules ./node_modules
 
 EXPOSE 4321
-CMD ["pnpm", "preview", "--host", "0.0.0.0", "--port", "4321"]
+CMD ["node", "dist/server/entry.mjs", "--host", "0.0.0.0", "--port", "4321"]
