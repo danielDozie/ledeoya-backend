@@ -29,7 +29,7 @@ ENV PATH="$PNPM_HOME:$PATH"
 
 RUN corepack enable && corepack prepare pnpm@9 --activate
 
-COPY --from=build /app/.output ./.output
+COPY --from=build /app/dist ./dist
 COPY --from=deps /app/node_modules ./node_modules
 
 EXPOSE 4321
