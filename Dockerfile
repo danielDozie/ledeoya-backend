@@ -17,5 +17,15 @@ RUN pnpm install --no-frozen-lockfile
 COPY . .
 RUN pnpm build
 
+FROM node:22-bullseye-slim AS runtime
+WORKDIR /app
+
+ENV PNPM_HOME="/home/node/.local/share/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+
+COPY --from=build /app /app
+
+ENV NODE_ENV=production
+
 EXPOSE 4321
 CMD ["pnpm", "preview", "--host", "0.0.0.0", "--port", "4321"]
