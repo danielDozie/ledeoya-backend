@@ -207,7 +207,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -218,7 +220,7 @@
                         {
                           "name": "isMultiScreen",
                           "type": "checkbox",
-                          "label": "Enable Multi-Screen Slides (Carousel)",
+                          "label": "Enable Carousel",
                           "defaultValue": false
                         },
                         {
@@ -240,17 +242,17 @@
                                 {
                                   "name": "heading",
                                   "type": "text",
-                                  "label": "Slide Heading"
+                                  "label": "Heading"
                                 },
                                 {
                                   "name": "subheading",
                                   "type": "textarea",
-                                  "label": "Slide Subheading"
+                                  "label": "Subheading"
                                 },
                                 {
                                   "name": "backgroundImage",
                                   "type": "upload",
-                                  "label": "Slide Background Image",
+                                  "label": "Background Image",
                                   "relationTo": "media"
                                 },
                                 {
@@ -261,12 +263,12 @@
                                     {
                                       "name": "text",
                                       "type": "text",
-                                      "label": "Button Label"
+                                      "label": "Label"
                                     },
                                     {
                                       "name": "url",
                                       "type": "text",
-                                      "label": "Button Redirection URL"
+                                      "label": "URL"
                                     }
                                   ]
                                 }
@@ -309,12 +311,12 @@
                                 {
                                   "name": "text",
                                   "type": "text",
-                                  "label": "Button Label"
+                                  "label": "Label"
                                 },
                                 {
                                   "name": "url",
                                   "type": "text",
-                                  "label": "Button Redirection URL"
+                                  "label": "URL"
                                 }
                               ]
                             }
@@ -483,7 +485,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -516,33 +520,33 @@
                                 {
                                   "name": "title",
                                   "type": "text",
-                                  "label": "Card Title"
+                                  "label": "Title"
                                 },
                                 {
                                   "name": "description",
                                   "type": "textarea",
-                                  "label": "Card Description"
+                                  "label": "Description"
                                 },
                                 {
                                   "name": "image",
                                   "type": "upload",
-                                  "label": "Card Image",
+                                  "label": "Image",
                                   "relationTo": "media"
                                 },
                                 {
                                   "name": "icon",
                                   "type": "text",
-                                  "label": "Card Icon (Emoji or Name)"
+                                  "label": "Icon"
                                 },
                                 {
                                   "name": "linkText",
                                   "type": "text",
-                                  "label": "Link Label Text"
+                                  "label": "Link Text"
                                 },
                                 {
                                   "name": "link",
                                   "type": "text",
-                                  "label": "Link Redirection URL"
+                                  "label": "URL"
                                 }
                               ]
                             }
@@ -578,17 +582,17 @@
                             {
                               "name": "icon",
                               "type": "text",
-                              "label": "Icon (Emoji or Name)"
+                              "label": "Icon"
                             },
                             {
                               "name": "linkText",
                               "type": "text",
-                              "label": "Link Label Text"
+                              "label": "Link Text"
                             },
                             {
                               "name": "link",
                               "type": "text",
-                              "label": "Link Redirection URL"
+                              "label": "URL"
                             }
                           ]
                         },
@@ -755,7 +759,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -827,12 +833,12 @@
                             {
                               "name": "text",
                               "type": "text",
-                              "label": "Button Label"
+                              "label": "Label"
                             },
                             {
                               "name": "url",
                               "type": "text",
-                              "label": "Button Redirection URL"
+                              "label": "URL"
                             }
                           ]
                         },
@@ -999,7 +1005,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -1213,7 +1221,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -1245,12 +1255,12 @@
                             {
                               "name": "text",
                               "type": "text",
-                              "label": "Button Label"
+                              "label": "Label"
                             },
                             {
                               "name": "url",
                               "type": "text",
-                              "label": "Button Redirection URL"
+                              "label": "URL"
                             }
                           ]
                         },
@@ -1417,7 +1427,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -1655,7 +1667,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -1863,7 +1877,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -2071,7 +2087,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -2270,7 +2288,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -2342,12 +2362,12 @@
                                 {
                                   "name": "text",
                                   "type": "text",
-                                  "label": "Button Label"
+                                  "label": "Label"
                                 },
                                 {
                                   "name": "url",
                                   "type": "text",
-                                  "label": "Button Redirection URL"
+                                  "label": "URL"
                                 }
                               ]
                             },
@@ -2527,7 +2547,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -2753,15 +2775,17 @@
                       "slug": "recent-feed",
                       "admin": {
                         "group": "Dynamic Content",
-                        "description": "Dynamic feed of recent blog posts or articles"
+                        "description": "Hand-picked showcase of items"
                       },
-                      "label": "Recent Posts Feed",
+                      "label": "Hand-Picked Feed",
                       "fields": [
                         {
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -2780,21 +2804,13 @@
                           "label": "Section Subtitle"
                         },
                         {
-                          "name": "collectionType",
-                          "type": "select",
-                          "label": "Feed Source Collection",
-                          "dynamicOptions": "collections"
-                        },
-                        {
-                          "name": "categoryFilter",
-                          "type": "text",
-                          "label": "Filter results by category slug / tag"
-                        },
-                        {
-                          "name": "limit",
-                          "type": "number",
-                          "label": "Max Items to Show",
-                          "defaultValue": 3
+                          "name": "selectedItems",
+                          "type": "relationship",
+                          "label": "Feed Items",
+                          "relationTo": [
+                            "posts"
+                          ],
+                          "hasMany": true
                         },
                         {
                           "name": "buttons",
@@ -2804,12 +2820,12 @@
                             {
                               "name": "text",
                               "type": "text",
-                              "label": "Button Label"
+                              "label": "Label"
                             },
                             {
                               "name": "url",
                               "type": "text",
-                              "label": "Button Redirection URL"
+                              "label": "URL"
                             }
                           ]
                         },
@@ -2976,7 +2992,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -3185,7 +3203,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -3373,7 +3393,9 @@
                           "name": "anchorId",
                           "type": "text",
                           "admin": {
-                            "hidden": true
+                            "readOnly": true,
+                            "hidden": true,
+                            "description": "Auto-generated slug ID used for queries and anchor links."
                           },
                           "hooks": {
                             "beforeChange": [
@@ -4314,7 +4336,7 @@
         "useAsTitle": "title",
         "defaultColumns": [
           "title",
-          "menu_location"
+          "menuLocation"
         ]
       },
       "fields": [
@@ -4325,9 +4347,9 @@
           "required": true
         },
         {
-          "name": "menu_location",
+          "name": "menuLocation",
           "type": "select",
-          "label": "Menu Location",
+          "label": "Location",
           "options": [
             {
               "label": "Header",
@@ -4368,14 +4390,14 @@
           "type": "group",
           "fields": [
             {
-              "name": "menu_item",
+              "name": "menuItem",
               "label": "Menu Item",
               "type": "array",
               "fields": [
                 {
-                  "name": "link_type",
+                  "name": "linkType",
                   "type": "select",
-                  "label": "Link Type",
+                  "label": "Type",
                   "options": [
                     {
                       "label": "Internal",
@@ -4388,27 +4410,27 @@
                   ]
                 },
                 {
-                  "name": "internal_target",
+                  "name": "internalTarget",
                   "type": "relationship",
-                  "label": "Internal Target",
+                  "label": "Target",
                   "relationTo": [
                     "pages",
                     "posts"
                   ],
                   "admin": {
                     "condition": {
-                      "field": "link_type",
+                      "field": "linkType",
                       "equals": "internal"
                     }
                   }
                 },
                 {
-                  "name": "external_url",
+                  "name": "externalUrl",
                   "type": "text",
-                  "label": "External URL",
+                  "label": "URL",
                   "admin": {
                     "condition": {
-                      "field": "link_type",
+                      "field": "linkType",
                       "equals": "external"
                     }
                   }
@@ -6313,26 +6335,26 @@
       "access": {},
       "fields": [
         {
-          "name": "site_logo",
+          "name": "siteLogo",
           "type": "upload",
           "relationTo": "media",
-          "label": "Site Logo"
+          "label": "Logo"
         },
         {
-          "name": "site_menu",
+          "name": "siteMenu",
           "type": "relationship",
           "relationTo": "menu",
-          "label": "Site Menu"
+          "label": "Menu"
         },
         {
-          "name": "header_text",
+          "name": "headerText",
           "type": "richtext",
-          "label": "Header Text"
+          "label": "Text"
         },
         {
-          "name": "header_buttons",
+          "name": "headerButtons",
           "type": "array",
-          "label": "Header Buttons",
+          "label": "Buttons",
           "fields": [
             {
               "name": "button",
@@ -6342,12 +6364,12 @@
                 {
                   "name": "text",
                   "type": "text",
-                  "label": "Button Text"
+                  "label": "Text"
                 },
                 {
                   "name": "url",
                   "type": "text",
-                  "label": "Button URL"
+                  "label": "URL"
                 }
               ]
             }
@@ -6365,35 +6387,35 @@
       "access": {},
       "fields": [
         {
-          "name": "footer_logo",
+          "name": "footerLogo",
           "type": "upload",
           "relationTo": "media",
-          "label": "Footer Logo"
+          "label": "Logo"
         },
         {
-          "name": "footer_text",
+          "name": "footerText",
           "type": "richtext",
-          "label": "Footer Text"
+          "label": "Text"
         },
         {
-          "name": "footer_address",
+          "name": "footerAddress",
           "type": "text",
-          "label": "Footer Address"
+          "label": "Address"
         },
         {
-          "name": "footer_phone",
+          "name": "footerPhone",
           "type": "text",
-          "label": "Footer Phone"
+          "label": "Phone"
         },
         {
-          "name": "footer_email",
+          "name": "footerEmail",
           "type": "text",
-          "label": "Footer Email"
+          "label": "Email"
         },
         {
-          "name": "footer_hours",
+          "name": "footerHours",
           "type": "array",
-          "label": "Footer Hours",
+          "label": "Hours",
           "fields": [
             {
               "name": "hour",
@@ -6403,9 +6425,9 @@
           ]
         },
         {
-          "name": "footer_menu",
+          "name": "footerMenu",
           "type": "array",
-          "label": "Footer Menu",
+          "label": "Menu",
           "fields": [
             {
               "name": "menu",
@@ -6415,9 +6437,9 @@
           ]
         },
         {
-          "name": "footer_buttons",
+          "name": "footerButtons",
           "type": "array",
-          "label": "Footer Buttons",
+          "label": "Buttons",
           "fields": [
             {
               "name": "button",
@@ -6427,36 +6449,46 @@
                 {
                   "name": "text",
                   "type": "text",
-                  "label": "Button Text"
+                  "label": "Text"
                 },
                 {
                   "name": "url",
                   "type": "text",
-                  "label": "Button URL"
+                  "label": "URL"
                 }
               ]
             }
           ]
         },
         {
-          "name": "footer_form",
+          "name": "footerForm",
           "type": "relationship",
           "relationTo": "forms",
-          "label": "Footer Form"
+          "label": "Form"
         }
       ]
     }
   ],
   "collectionOverrides": {
     "pages": {
-      "icon": "FileText"
+      "icon": "FileText",
+      "fields": {
+        "content.recentFeed.selectedItems": {
+          "relationTo": [
+            "posts",
+            "trips",
+            "destinations",
+            "services"
+          ]
+        }
+      }
     },
     "posts": {
       "icon": "Newspaper"
     },
     "menu": {
       "fields": {
-        "menu.menu_item.internal_target": {
+        "menu.menuItem.internalTarget": {
           "relationTo": [
             "pages",
             "posts",
