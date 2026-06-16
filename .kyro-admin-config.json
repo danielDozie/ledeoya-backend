@@ -328,7 +328,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -343,7 +343,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -358,7 +358,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -374,7 +374,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -389,7 +389,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -419,7 +419,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -445,7 +445,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -602,7 +602,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -617,7 +617,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -632,7 +632,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -648,7 +648,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -663,7 +663,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -693,7 +693,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -719,7 +719,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -748,7 +748,7 @@
                       ]
                     },
                     {
-                      "slug": "feature-split",
+                      "slug": "featureSplit",
                       "admin": {
                         "group": "Structural Sections",
                         "description": "Side-by-side text and media layout"
@@ -848,7 +848,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -863,7 +863,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -878,7 +878,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -894,7 +894,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -909,7 +909,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -939,7 +939,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -965,7 +965,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -994,7 +994,7 @@
                       ]
                     },
                     {
-                      "slug": "feature-grid",
+                      "slug": "featureGrid",
                       "admin": {
                         "group": "Marketing Grids",
                         "description": "Multi-column grid showcasing features or services"
@@ -1064,7 +1064,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1079,7 +1079,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1094,7 +1094,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1110,7 +1110,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1125,7 +1125,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1155,7 +1155,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1181,7 +1181,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1210,7 +1210,7 @@
                       ]
                     },
                     {
-                      "slug": "cta-banner",
+                      "slug": "ctaBanner",
                       "admin": {
                         "group": "Structural Sections",
                         "description": "High-impact call-to-action banner"
@@ -1270,7 +1270,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1285,7 +1285,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1300,7 +1300,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1316,7 +1316,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1331,7 +1331,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1361,7 +1361,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1387,7 +1387,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1510,7 +1510,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1525,7 +1525,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1540,7 +1540,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1556,7 +1556,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1571,7 +1571,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1601,7 +1601,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1627,7 +1627,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1720,7 +1720,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1735,7 +1735,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1750,7 +1750,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1766,7 +1766,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1781,7 +1781,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1811,7 +1811,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1837,7 +1837,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1930,7 +1930,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1945,7 +1945,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1960,7 +1960,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1976,7 +1976,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -1991,7 +1991,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2021,7 +2021,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2047,7 +2047,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2076,7 +2076,7 @@
                       ]
                     },
                     {
-                      "slug": "logo-cloud",
+                      "slug": "logoCloud",
                       "admin": {
                         "group": "Structural Sections",
                         "description": "Showcase for partner and client company logos"
@@ -2131,7 +2131,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2146,7 +2146,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2161,7 +2161,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2177,7 +2177,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2192,7 +2192,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2222,7 +2222,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2248,7 +2248,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2390,7 +2390,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2405,7 +2405,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2420,7 +2420,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2436,7 +2436,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2451,7 +2451,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2481,7 +2481,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2507,7 +2507,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2626,7 +2626,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2641,7 +2641,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2656,7 +2656,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2672,7 +2672,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2687,7 +2687,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2717,7 +2717,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2743,7 +2743,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2772,7 +2772,7 @@
                       ]
                     },
                     {
-                      "slug": "recent-feed",
+                      "slug": "recentFeed",
                       "admin": {
                         "group": "Dynamic Content",
                         "description": "Hand-picked showcase of items"
@@ -2835,7 +2835,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2850,7 +2850,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2865,7 +2865,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2881,7 +2881,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2896,7 +2896,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2926,7 +2926,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2952,7 +2952,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -2981,7 +2981,7 @@
                       ]
                     },
                     {
-                      "slug": "process-steps",
+                      "slug": "processSteps",
                       "admin": {
                         "group": "Lead Capture & Interactive",
                         "description": "Numbered sequence illustrating a process or workflow"
@@ -3046,7 +3046,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3061,7 +3061,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3076,7 +3076,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3092,7 +3092,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3107,7 +3107,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3137,7 +3137,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3163,7 +3163,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3192,7 +3192,7 @@
                       ]
                     },
                     {
-                      "slug": "form-embed",
+                      "slug": "formEmbed",
                       "admin": {
                         "group": "Lead Capture & Interactive",
                         "description": "Embeddable interactive forms for lead capture"
@@ -3236,7 +3236,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3251,7 +3251,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3266,7 +3266,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3282,7 +3282,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3297,7 +3297,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3327,7 +3327,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3353,7 +3353,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3382,7 +3382,7 @@
                       ]
                     },
                     {
-                      "slug": "video-showcase",
+                      "slug": "videoShowcase",
                       "admin": {
                         "group": "Structural Sections",
                         "description": "Cinematic video player with custom thumbnail"
@@ -3452,7 +3452,7 @@
                           "label": "Extra Content Elements",
                           "blocks": [
                             {
-                              "slug": "heading-element",
+                              "slug": "headingElement",
                               "label": "Heading",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3467,7 +3467,7 @@
                               ]
                             },
                             {
-                              "slug": "text-element",
+                              "slug": "textElement",
                               "label": "Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3482,7 +3482,7 @@
                               ]
                             },
                             {
-                              "slug": "image-element",
+                              "slug": "imageElement",
                               "label": "Image",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3498,7 +3498,7 @@
                               ]
                             },
                             {
-                              "slug": "richtext-element",
+                              "slug": "richtextElement",
                               "label": "Rich Text",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3513,7 +3513,7 @@
                               ]
                             },
                             {
-                              "slug": "button-element",
+                              "slug": "buttonElement",
                               "label": "Button",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3543,7 +3543,7 @@
                               ]
                             },
                             {
-                              "slug": "video-element",
+                              "slug": "videoElement",
                               "label": "Video",
                               "admin": {
                                 "group": "Basic Content Elements",
@@ -3569,7 +3569,7 @@
                               ]
                             },
                             {
-                              "slug": "list-element",
+                              "slug": "listElement",
                               "label": "List",
                               "admin": {
                                 "group": "Basic Content Elements",

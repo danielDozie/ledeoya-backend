@@ -44,4 +44,7 @@ export default defineConfig({
     port: 4321,
     host: true,
   },
+  security: {
+    checkOrigin: false,
+  }
 });
