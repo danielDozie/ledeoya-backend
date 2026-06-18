@@ -2649,9 +2649,7 @@
                           "name": "selectedItems",
                           "type": "relationship",
                           "label": "Feed Items",
-                          "relationTo": [
-                            "posts"
-                          ],
+                          "relationTo": "*",
                           "hasMany": true
                         },
                         {
