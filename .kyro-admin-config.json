@@ -204,20 +204,6 @@
                       "label": "Hero Section",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "isMultiScreen",
                           "type": "checkbox",
                           "label": "Enable Carousel",
@@ -482,20 +468,6 @@
                       "label": "Card Block",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "isMultiCard",
                           "type": "checkbox",
                           "label": "Enable Multicard Layout",
@@ -756,20 +728,6 @@
                       "label": "Feature Split (Text & Media)",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "title",
                           "type": "text",
                           "label": "Title"
@@ -809,6 +767,11 @@
                               "name": "itemUrl",
                               "type": "text",
                               "label": "Link URL"
+                            },
+                            {
+                              "name": "itemText",
+                              "type": "text",
+                              "label": "Link Text"
                             }
                           ]
                         },
@@ -1001,20 +964,6 @@
                       },
                       "label": "Feature Grid",
                       "fields": [
-                        {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
@@ -1218,20 +1167,6 @@
                       "label": "CTA Banner",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "headline",
                           "type": "text",
                           "label": "Headline"
@@ -1424,29 +1359,25 @@
                       "label": "Testimonials",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
+                        },
+                        {
+                          "name": "sectionSubtitle",
+                          "type": "text",
+                          "label": "Section Subheading"
                         },
                         {
                           "name": "items",
                           "type": "array",
                           "label": "Testimonials",
                           "fields": [
+                            {
+                              "name": "authorName",
+                              "type": "text",
+                              "label": "Author Name"
+                            },
                             {
                               "name": "quote",
                               "type": "textarea",
@@ -1479,11 +1410,6 @@
                                   "value": "1"
                                 }
                               ]
-                            },
-                            {
-                              "name": "authorName",
-                              "type": "text",
-                              "label": "Author Name"
                             },
                             {
                               "name": "authorRole",
@@ -1663,20 +1589,6 @@
                       },
                       "label": "FAQ Section",
                       "fields": [
-                        {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
@@ -1874,20 +1786,6 @@
                       "label": "Stats / Metrics",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -2084,20 +1982,6 @@
                       "label": "Logo Cloud / Partners",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -2284,20 +2168,6 @@
                       },
                       "label": "Pricing Plans",
                       "fields": [
-                        {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
@@ -2544,20 +2414,6 @@
                       "label": "Team Showcase",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -2780,20 +2636,6 @@
                       "label": "Hand-Picked Feed",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
@@ -2988,20 +2830,6 @@
                       },
                       "label": "Process Steps / Timeline",
                       "fields": [
-                        {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
@@ -3200,20 +3028,6 @@
                       "label": "Form Embed",
                       "fields": [
                         {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
-                        {
                           "name": "title",
                           "type": "text",
                           "label": "Form Title"
@@ -3389,20 +3203,6 @@
                       },
                       "label": "Cinematic Video Showcase",
                       "fields": [
-                        {
-                          "name": "anchorId",
-                          "type": "text",
-                          "admin": {
-                            "readOnly": true,
-                            "hidden": true,
-                            "description": "Auto-generated slug ID used for queries and anchor links."
-                          },
-                          "hooks": {
-                            "beforeChange": [
-                              null
-                            ]
-                          }
-                        },
                         {
                           "name": "sectionTitle",
                           "type": "text",
@@ -4719,6 +4519,32 @@
           }
         },
         {
+          "name": "badge",
+          "type": "select",
+          "label": "Badge",
+          "options": [
+            {
+              "label": "Popular",
+              "value": "popular"
+            },
+            {
+              "label": "New",
+              "value": "new"
+            },
+            {
+              "label": "Top Rated",
+              "value": "top-rated"
+            },
+            {
+              "label": "Trending",
+              "value": "trending"
+            }
+          ],
+          "admin": {
+            "position": "sidebar"
+          }
+        },
+        {
           "name": "gallery",
           "type": "upload",
           "label": "Gallery",
@@ -4803,6 +4629,10 @@
               "value": "south-africa"
             },
             {
+              "label": "Greece",
+              "value": "greece"
+            },
+            {
               "label": "Brazil",
               "value": "brazil"
             },
@@ -4837,6 +4667,38 @@
             {
               "label": "Thailand",
               "value": "thailand"
+            },
+            {
+              "label": "Egypt",
+              "value": "egypt"
+            },
+            {
+              "label": "Indonesia",
+              "value": "indonesia"
+            },
+            {
+              "label": "Malaysia",
+              "value": "malaysia"
+            },
+            {
+              "label": "Philippines",
+              "value": "philippines"
+            },
+            {
+              "label": "Singapore",
+              "value": "singapore"
+            },
+            {
+              "label": "Kenya",
+              "value": "kenya"
+            },
+            {
+              "label": "Tanzania",
+              "value": "tanzania"
+            },
+            {
+              "label": "Hawaii",
+              "value": "hawaii"
             }
           ]
         }
@@ -4918,60 +4780,6 @@
           "label": "Gallery",
           "hasMany": true,
           "relationTo": "media",
-          "admin": {
-            "position": "sidebar"
-          }
-        }
-      ]
-    },
-    {
-      "slug": "testimonials",
-      "label": "Testimonials",
-      "singularLabel": "Testimonial",
-      "access": {
-        "read": true,
-        "create": false,
-        "update": false,
-        "delete": false
-      },
-      "admin": {
-        "useAsTitle": "fullname",
-        "defaultColumns": [
-          "fullname",
-          "company"
-        ],
-        "icon": "MessageSquare"
-      },
-      "fields": [
-        {
-          "name": "fullname",
-          "type": "text",
-          "label": "Full Name",
-          "required": true
-        },
-        {
-          "name": "company",
-          "type": "text",
-          "label": "Company"
-        },
-        {
-          "name": "quote",
-          "type": "textarea",
-          "label": "Quote"
-        },
-        {
-          "name": "image",
-          "type": "upload",
-          "label": "Image",
-          "relationTo": "media",
-          "admin": {
-            "position": "sidebar"
-          }
-        },
-        {
-          "name": "order",
-          "type": "number",
-          "label": "Order",
           "admin": {
             "position": "sidebar"
           }

@@ -45,7 +45,7 @@ export default defineKyroConfig({
       tripsCollection,
       destinationsCollection,
       servicesCollection,
-      testimonialsCollection,
+      //testimonialsCollection,
       messagesCollection,
     ],
     // Add global settings fields from Kyro core templates.
