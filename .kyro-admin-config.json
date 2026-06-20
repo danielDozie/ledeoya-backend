@@ -734,7 +734,7 @@
                         },
                         {
                           "name": "description",
-                          "type": "richtext",
+                          "type": "textarea",
                           "label": "Description"
                         },
                         {
@@ -1789,6 +1789,11 @@
                           "name": "sectionTitle",
                           "type": "text",
                           "label": "Section Heading"
+                        },
+                        {
+                          "name": "description",
+                          "type": "textarea",
+                          "label": "Description"
                         },
                         {
                           "name": "items",
