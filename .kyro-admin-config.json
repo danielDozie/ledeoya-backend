@@ -368,7 +368,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -628,7 +628,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -865,7 +865,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1067,7 +1067,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1259,7 +1259,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1490,7 +1490,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1611,7 +1611,7 @@
                             },
                             {
                               "name": "answer",
-                              "type": "richtext",
+                              "type": "textarea",
                               "label": "Answer"
                             }
                           ]
@@ -1686,7 +1686,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1887,7 +1887,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2074,7 +2074,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2319,7 +2319,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2541,7 +2541,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2734,7 +2734,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2931,7 +2931,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -3107,7 +3107,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -3309,7 +3309,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "content",
+                                  "name": "richText",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -5080,6 +5080,14 @@
               "label": "Mixpanel Token"
             }
           ]
+        },
+        {
+          "name": "mapApiKey",
+          "type": "text",
+          "label": "Map API Key",
+          "admin": {
+            "description": "API Key for Map Integrations (Google Maps, Mapbox, etc.)"
+          }
         }
       ]
     },
