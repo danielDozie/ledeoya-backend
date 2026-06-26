@@ -4561,149 +4561,50 @@
           "name": "region",
           "type": "select",
           "label": "Region",
-          "admin": {
-            "position": "sidebar"
-          },
+          "required": false,
           "options": [
             {
-              "label": "North America",
-              "value": "north-america"
+              "label": "Africa",
+              "value": "africa"
             },
             {
-              "label": "Europe",
-              "value": "europe"
+              "label": "Antarctica",
+              "value": "antarctica"
             },
             {
               "label": "Asia",
               "value": "asia"
             },
             {
-              "label": "South America",
-              "value": "south-america"
+              "label": "Europe",
+              "value": "europe"
             },
             {
-              "label": "Africa",
-              "value": "africa"
+              "label": "North America",
+              "value": "north-america"
             },
             {
               "label": "Oceania",
               "value": "oceania"
+            },
+            {
+              "label": "South America",
+              "value": "south-america"
             }
-          ]
+          ],
+          "admin": {
+            "position": "sidebar"
+          }
         },
         {
           "name": "country",
           "type": "select",
           "label": "Country",
+          "required": false,
+          "options": "__KYRO_DYNAMIC_OPTIONS__",
           "admin": {
             "position": "sidebar"
-          },
-          "options": [
-            {
-              "label": "United States",
-              "value": "united-states"
-            },
-            {
-              "label": "Canada",
-              "value": "canada"
-            },
-            {
-              "label": "United Kingdom",
-              "value": "united-kingdom"
-            },
-            {
-              "label": "Germany",
-              "value": "germany"
-            },
-            {
-              "label": "France",
-              "value": "france"
-            },
-            {
-              "label": "Japan",
-              "value": "japan"
-            },
-            {
-              "label": "Australia",
-              "value": "australia"
-            },
-            {
-              "label": "South Africa",
-              "value": "south-africa"
-            },
-            {
-              "label": "Greece",
-              "value": "greece"
-            },
-            {
-              "label": "Brazil",
-              "value": "brazil"
-            },
-            {
-              "label": "Argentina",
-              "value": "argentina"
-            },
-            {
-              "label": "Chile",
-              "value": "chile"
-            },
-            {
-              "label": "Colombia",
-              "value": "colombia"
-            },
-            {
-              "label": "Mexico",
-              "value": "mexico"
-            },
-            {
-              "label": "India",
-              "value": "india"
-            },
-            {
-              "label": "China",
-              "value": "china"
-            },
-            {
-              "label": "South Korea",
-              "value": "south-korea"
-            },
-            {
-              "label": "Thailand",
-              "value": "thailand"
-            },
-            {
-              "label": "Egypt",
-              "value": "egypt"
-            },
-            {
-              "label": "Indonesia",
-              "value": "indonesia"
-            },
-            {
-              "label": "Malaysia",
-              "value": "malaysia"
-            },
-            {
-              "label": "Philippines",
-              "value": "philippines"
-            },
-            {
-              "label": "Singapore",
-              "value": "singapore"
-            },
-            {
-              "label": "Kenya",
-              "value": "kenya"
-            },
-            {
-              "label": "Tanzania",
-              "value": "tanzania"
-            },
-            {
-              "label": "Hawaii",
-              "value": "hawaii"
-            }
-          ]
+          }
         }
       ]
     },
