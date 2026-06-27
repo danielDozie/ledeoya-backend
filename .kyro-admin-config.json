@@ -16,6 +16,7 @@
         ],
         "description": "Blog posts and articles"
       },
+      "seo": true,
       "fields": [
         {
           "name": "mainTabs",
@@ -37,6 +38,14 @@
                   "name": "content",
                   "type": "richtext",
                   "label": "Content"
+                },
+                {
+                  "name": "excerpt",
+                  "type": "textarea",
+                  "label": "Excerpt",
+                  "admin": {
+                    "description": "A short summary of the post."
+                  }
                 }
               ]
             },
@@ -71,15 +80,15 @@
               ]
             },
             {
-              "label": "SEO",
+              "label": "SEO Settings",
               "fields": [
                 {
                   "name": "metaTitle",
                   "type": "text",
                   "label": "Meta Title",
                   "admin": {
-                    "autoGenerate": "title",
-                    "description": "The title used for SEO and social sharing (recommended < 60 chars)."
+                    "description": "The title used for search engines (recommended < 60 chars).",
+                    "autoGenerate": "title"
                   }
                 },
                 {
@@ -87,18 +96,84 @@
                   "type": "textarea",
                   "label": "Meta Description",
                   "admin": {
-                    "autoGenerate": "content",
-                    "description": "A brief summary for search engines (recommended < 160 chars)."
+                    "description": "A brief summary for search engines (recommended < 160 chars).",
+                    "autoGenerate": "content"
+                  }
+                },
+                {
+                  "name": "keywords",
+                  "type": "text",
+                  "label": "Keywords",
+                  "admin": {
+                    "description": "Comma-separated list of keywords for this page."
                   }
                 },
                 {
                   "name": "ogImage",
                   "type": "upload",
-                  "label": "OG Image",
+                  "label": "OpenGraph Image",
                   "relationTo": "media",
                   "admin": {
-                    "description": "The image shown when the post is shared on social media."
+                    "description": "The image shown when shared on social media."
                   }
+                },
+                {
+                  "name": "twitter",
+                  "type": "group",
+                  "label": "Twitter Card",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "type": "text",
+                      "label": "Twitter Title"
+                    },
+                    {
+                      "name": "description",
+                      "type": "textarea",
+                      "label": "Twitter Description"
+                    },
+                    {
+                      "name": "image",
+                      "type": "upload",
+                      "label": "Twitter Image",
+                      "relationTo": "media"
+                    }
+                  ]
+                },
+                {
+                  "name": "advanced",
+                  "type": "group",
+                  "label": "Advanced Search Settings",
+                  "fields": [
+                    {
+                      "name": "noindex",
+                      "type": "checkbox",
+                      "label": "Hide from search engines (noindex)",
+                      "defaultValue": false
+                    },
+                    {
+                      "name": "nofollow",
+                      "type": "checkbox",
+                      "label": "Do not follow links (nofollow)",
+                      "defaultValue": false
+                    },
+                    {
+                      "name": "canonicalUrl",
+                      "type": "text",
+                      "label": "Canonical URL Override",
+                      "admin": {
+                        "description": "Leave empty to use the default canonical URL."
+                      }
+                    },
+                    {
+                      "name": "structuredData",
+                      "type": "code",
+                      "label": "JSON-LD Structured Data",
+                      "admin": {
+                        "description": "Custom JSON-LD schema for this specific page."
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -142,6 +217,16 @@
           }
         },
         {
+          "name": "featured",
+          "type": "checkbox",
+          "label": "Featured",
+          "defaultValue": false,
+          "admin": {
+            "description": "Highlight this post as a featured article.",
+            "position": "sidebar"
+          }
+        },
+        {
           "name": "featuredImage",
           "type": "upload",
           "label": "Featured Image",
@@ -150,8 +235,23 @@
             "description": "The primary visual used to represent this post.",
             "position": "sidebar"
           }
+        },
+        {
+          "name": "readTime",
+          "type": "number",
+          "label": "Read Time (mins)",
+          "admin": {
+            "description": "Estimated reading time in minutes.",
+            "position": "sidebar",
+            "readOnly": true
+          }
         }
       ],
+      "hooks": {
+        "beforeChange": [
+          null
+        ]
+      },
       "timestamps": true,
       "versions": {
         "drafts": true,
@@ -171,8 +271,9 @@
           "status",
           "updatedAt"
         ],
-        "description": "Static pages"
+        "description": "Standard web pages"
       },
+      "seo": true,
       "fields": [
         {
           "name": "mainTabs",
@@ -3409,13 +3510,14 @@
               "fields": []
             },
             {
-              "label": "SEO",
+              "label": "SEO Settings",
               "fields": [
                 {
                   "name": "metaTitle",
                   "type": "text",
                   "label": "Meta Title",
                   "admin": {
+                    "description": "The title used for search engines (recommended < 60 chars).",
                     "autoGenerate": "title"
                   }
                 },
@@ -3424,14 +3526,84 @@
                   "type": "textarea",
                   "label": "Meta Description",
                   "admin": {
+                    "description": "A brief summary for search engines (recommended < 160 chars).",
                     "autoGenerate": "content"
+                  }
+                },
+                {
+                  "name": "keywords",
+                  "type": "text",
+                  "label": "Keywords",
+                  "admin": {
+                    "description": "Comma-separated list of keywords for this page."
                   }
                 },
                 {
                   "name": "ogImage",
                   "type": "upload",
-                  "label": "OG Image",
-                  "relationTo": "media"
+                  "label": "OpenGraph Image",
+                  "relationTo": "media",
+                  "admin": {
+                    "description": "The image shown when shared on social media."
+                  }
+                },
+                {
+                  "name": "twitter",
+                  "type": "group",
+                  "label": "Twitter Card",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "type": "text",
+                      "label": "Twitter Title"
+                    },
+                    {
+                      "name": "description",
+                      "type": "textarea",
+                      "label": "Twitter Description"
+                    },
+                    {
+                      "name": "image",
+                      "type": "upload",
+                      "label": "Twitter Image",
+                      "relationTo": "media"
+                    }
+                  ]
+                },
+                {
+                  "name": "advanced",
+                  "type": "group",
+                  "label": "Advanced Search Settings",
+                  "fields": [
+                    {
+                      "name": "noindex",
+                      "type": "checkbox",
+                      "label": "Hide from search engines (noindex)",
+                      "defaultValue": false
+                    },
+                    {
+                      "name": "nofollow",
+                      "type": "checkbox",
+                      "label": "Do not follow links (nofollow)",
+                      "defaultValue": false
+                    },
+                    {
+                      "name": "canonicalUrl",
+                      "type": "text",
+                      "label": "Canonical URL Override",
+                      "admin": {
+                        "description": "Leave empty to use the default canonical URL."
+                      }
+                    },
+                    {
+                      "name": "structuredData",
+                      "type": "code",
+                      "label": "JSON-LD Structured Data",
+                      "admin": {
+                        "description": "Custom JSON-LD schema for this specific page."
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -4198,6 +4370,26 @@
               "type": "array",
               "fields": [
                 {
+                  "name": "style",
+                  "type": "select",
+                  "label": "Link Style",
+                  "defaultValue": "link",
+                  "options": [
+                    {
+                      "label": "Standard Link",
+                      "value": "link"
+                    },
+                    {
+                      "label": "Primary Button",
+                      "value": "primary_button"
+                    },
+                    {
+                      "label": "Secondary Button",
+                      "value": "secondary_button"
+                    }
+                  ]
+                },
+                {
                   "name": "linkType",
                   "type": "select",
                   "label": "Type",
@@ -4243,6 +4435,226 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "products",
+      "label": "Products",
+      "labelPlural": "Products",
+      "singularLabel": "Product",
+      "admin": {
+        "useAsTitle": "title",
+        "defaultColumns": [
+          "title",
+          "slug",
+          "price",
+          "inventory"
+        ],
+        "description": "E-commerce products"
+      },
+      "seo": true,
+      "fields": [
+        {
+          "name": "mainTabs",
+          "type": "tabs",
+          "tabs": [
+            {
+              "label": "Content",
+              "fields": [
+                {
+                  "name": "title",
+                  "type": "text",
+                  "required": true,
+                  "label": "Title"
+                },
+                {
+                  "name": "description",
+                  "type": "richtext",
+                  "label": "Description"
+                }
+              ]
+            },
+            {
+              "label": "Inventory & Pricing",
+              "fields": [
+                {
+                  "name": "price",
+                  "type": "number",
+                  "required": true,
+                  "label": "Price"
+                },
+                {
+                  "name": "compareAtPrice",
+                  "type": "number",
+                  "label": "Compare at Price",
+                  "admin": {
+                    "description": "Original price for sale display"
+                  }
+                },
+                {
+                  "name": "costPrice",
+                  "type": "number",
+                  "label": "Cost Price",
+                  "admin": {
+                    "description": "For profit calculation"
+                  }
+                },
+                {
+                  "name": "sku",
+                  "type": "text",
+                  "required": true,
+                  "label": "SKU"
+                },
+                {
+                  "name": "barcode",
+                  "type": "text",
+                  "label": "Barcode"
+                },
+                {
+                  "name": "inventory",
+                  "type": "number",
+                  "label": "Inventory",
+                  "defaultValue": 0
+                },
+                {
+                  "name": "images",
+                  "type": "array",
+                  "label": "Images",
+                  "fields": [
+                    {
+                      "name": "url",
+                      "type": "text",
+                      "label": "URL"
+                    },
+                    {
+                      "name": "alt",
+                      "type": "text",
+                      "label": "Alt Text"
+                    }
+                  ]
+                },
+                {
+                  "name": "category",
+                  "type": "relationship",
+                  "label": "Category",
+                  "relationTo": "product-categories"
+                }
+              ]
+            },
+            {
+              "label": "SEO Settings",
+              "fields": [
+                {
+                  "name": "metaTitle",
+                  "type": "text",
+                  "label": "Meta Title",
+                  "admin": {
+                    "description": "The title used for search engines (recommended < 60 chars).",
+                    "autoGenerate": "title"
+                  }
+                },
+                {
+                  "name": "metaDescription",
+                  "type": "textarea",
+                  "label": "Meta Description",
+                  "admin": {
+                    "description": "A brief summary for search engines (recommended < 160 chars).",
+                    "autoGenerate": "content"
+                  }
+                },
+                {
+                  "name": "keywords",
+                  "type": "text",
+                  "label": "Keywords",
+                  "admin": {
+                    "description": "Comma-separated list of keywords for this page."
+                  }
+                },
+                {
+                  "name": "ogImage",
+                  "type": "upload",
+                  "label": "OpenGraph Image",
+                  "relationTo": "media",
+                  "admin": {
+                    "description": "The image shown when shared on social media."
+                  }
+                },
+                {
+                  "name": "twitter",
+                  "type": "group",
+                  "label": "Twitter Card",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "type": "text",
+                      "label": "Twitter Title"
+                    },
+                    {
+                      "name": "description",
+                      "type": "textarea",
+                      "label": "Twitter Description"
+                    },
+                    {
+                      "name": "image",
+                      "type": "upload",
+                      "label": "Twitter Image",
+                      "relationTo": "media"
+                    }
+                  ]
+                },
+                {
+                  "name": "advanced",
+                  "type": "group",
+                  "label": "Advanced Search Settings",
+                  "fields": [
+                    {
+                      "name": "noindex",
+                      "type": "checkbox",
+                      "label": "Hide from search engines (noindex)",
+                      "defaultValue": false
+                    },
+                    {
+                      "name": "nofollow",
+                      "type": "checkbox",
+                      "label": "Do not follow links (nofollow)",
+                      "defaultValue": false
+                    },
+                    {
+                      "name": "canonicalUrl",
+                      "type": "text",
+                      "label": "Canonical URL Override",
+                      "admin": {
+                        "description": "Leave empty to use the default canonical URL."
+                      }
+                    },
+                    {
+                      "name": "structuredData",
+                      "type": "code",
+                      "label": "JSON-LD Structured Data",
+                      "admin": {
+                        "description": "Custom JSON-LD schema for this specific page."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "slug",
+          "type": "text",
+          "required": true,
+          "label": "Slug",
+          "admin": {
+            "position": "sidebar",
+            "autoGenerate": "title"
+          }
+        }
+      ],
+      "timestamps": true,
+      "versions": {
+        "drafts": true
+      }
     },
     {
       "versions": {
@@ -4791,24 +5203,6 @@
           }
         },
         {
-          "name": "siteLogo",
-          "type": "upload",
-          "label": "Site Logo",
-          "relationTo": "media"
-        },
-        {
-          "name": "siteFavicon",
-          "type": "upload",
-          "label": "Favicon",
-          "relationTo": "media"
-        },
-        {
-          "name": "siteOgImage",
-          "type": "upload",
-          "label": "Default OG Image",
-          "relationTo": "media"
-        },
-        {
           "name": "siteUrl",
           "type": "text",
           "label": "Site URL",
@@ -4927,28 +5321,6 @@
           ]
         },
         {
-          "name": "logo",
-          "type": "group",
-          "label": "Logo Display Settings",
-          "fields": [
-            {
-              "name": "width",
-              "type": "number",
-              "label": "Max Width (px)"
-            },
-            {
-              "name": "height",
-              "type": "number",
-              "label": "Max Height (px)"
-            },
-            {
-              "name": "altText",
-              "type": "text",
-              "label": "Alt Text"
-            }
-          ]
-        },
-        {
           "name": "analyticsEnabled",
           "type": "checkbox",
           "label": "Enable Analytics & Tracking",
@@ -5030,6 +5402,12 @@
           "type": "textarea",
           "label": "Default Description",
           "admin": {}
+        },
+        {
+          "name": "defaultOgImage",
+          "type": "upload",
+          "label": "Default OG Image",
+          "relationTo": "media"
         },
         {
           "name": "titleTemplate",
@@ -5199,82 +5577,142 @@
       ]
     },
     {
-      "slug": "social-settings",
-      "label": "Social Media",
+      "slug": "brand-settings",
+      "label": "Brand Settings",
       "admin": {
-        "group": "settings"
+        "group": "settings",
+        "description": "Manage global brand identity, logos, contact information, and social links."
       },
       "access": {},
       "fields": [
         {
-          "name": "showAll",
-          "type": "checkbox",
-          "label": "Show All Platforms",
-          "defaultValue": false,
-          "admin": {
-            "description": "Toggle to show niche or secondary social platforms."
-          }
+          "name": "identity",
+          "type": "group",
+          "label": "Brand Identity",
+          "fields": [
+            {
+              "name": "primaryLogo",
+              "type": "upload",
+              "label": "Primary Logo",
+              "relationTo": "media"
+            },
+            {
+              "name": "darkLogo",
+              "type": "upload",
+              "label": "Dark Logo (Optional)",
+              "relationTo": "media",
+              "admin": {
+                "description": "Used for dark mode layouts."
+              }
+            },
+            {
+              "name": "favicon",
+              "type": "upload",
+              "label": "Favicon",
+              "relationTo": "media"
+            }
+          ]
         },
         {
-          "name": "facebook",
-          "type": "text",
-          "label": "Facebook"
+          "name": "companyInfo",
+          "type": "group",
+          "label": "Contact & Company Information",
+          "fields": [
+            {
+              "name": "companyName",
+              "type": "text",
+              "label": "Company Name"
+            },
+            {
+              "name": "address",
+              "type": "textarea",
+              "label": "Physical Address"
+            },
+            {
+              "name": "phone",
+              "type": "text",
+              "label": "Phone Number"
+            },
+            {
+              "name": "email",
+              "type": "text",
+              "label": "Public Email Address"
+            }
+          ]
         },
         {
-          "name": "twitter",
-          "type": "text",
-          "label": "Twitter/X"
+          "name": "businessHours",
+          "type": "array",
+          "label": "Business Hours",
+          "fields": [
+            {
+              "name": "day",
+              "type": "text",
+              "label": "Day / Range",
+              "admin": {
+                "description": "e.g., Mon - Fri"
+              }
+            },
+            {
+              "name": "hours",
+              "type": "text",
+              "label": "Hours",
+              "admin": {
+                "description": "e.g., 9:00 AM - 5:00 PM"
+              }
+            }
+          ]
         },
         {
-          "name": "instagram",
-          "type": "text",
-          "label": "Instagram"
-        },
-        {
-          "name": "linkedin",
-          "type": "text",
-          "label": "LinkedIn"
-        },
-        {
-          "name": "youtube",
-          "type": "text",
-          "label": "YouTube"
-        },
-        {
-          "name": "tiktok",
-          "type": "text",
-          "label": "TikTok",
-          "admin": {}
-        },
-        {
-          "name": "pinterest",
-          "type": "text",
-          "label": "Pinterest",
-          "admin": {}
-        },
-        {
-          "name": "discord",
-          "type": "text",
-          "label": "Discord",
-          "admin": {}
-        },
-        {
-          "name": "twitch",
-          "type": "text",
-          "label": "Twitch",
-          "admin": {}
-        },
-        {
-          "name": "github",
-          "type": "text",
-          "label": "GitHub",
-          "admin": {}
-        },
-        {
-          "name": "mastodon",
-          "type": "text",
-          "label": "Mastodon",
-          "admin": {}
+          "name": "socialLinks",
+          "type": "array",
+          "label": "Social Media Profiles",
+          "fields": [
+            {
+              "name": "platform",
+              "type": "select",
+              "label": "Platform",
+              "options": [
+                {
+                  "label": "Facebook",
+                  "value": "facebook"
+                },
+                {
+                  "label": "Twitter / X",
+                  "value": "twitter"
+                },
+                {
+                  "label": "Instagram",
+                  "value": "instagram"
+                },
+                {
+                  "label": "LinkedIn",
+                  "value": "linkedin"
+                },
+                {
+                  "label": "YouTube",
+                  "value": "youtube"
+                },
+                {
+                  "label": "TikTok",
+                  "value": "tiktok"
+                },
+                {
+                  "label": "GitHub",
+                  "value": "github"
+                },
+                {
+                  "label": "Other",
+                  "value": "other"
+                }
+              ]
+            },
+            {
+              "name": "url",
+              "type": "text",
+              "label": "Profile URL"
+            }
+          ]
         }
       ]
     },
@@ -6042,149 +6480,6 @@
           "admin": {
             "description": "Maximum concurrent sessions allowed per user"
           }
-        }
-      ]
-    },
-    {
-      "slug": "header-settings",
-      "label": "Header Settings",
-      "admin": {
-        "group": "Header Configuration",
-        "description": "Manage global header settings like the logo and navigation."
-      },
-      "access": {},
-      "fields": [
-        {
-          "name": "siteLogo",
-          "type": "upload",
-          "relationTo": "media",
-          "label": "Logo"
-        },
-        {
-          "name": "siteMenu",
-          "type": "relationship",
-          "relationTo": "menu",
-          "label": "Menu"
-        },
-        {
-          "name": "headerText",
-          "type": "richtext",
-          "label": "Text"
-        },
-        {
-          "name": "headerButtons",
-          "type": "array",
-          "label": "Buttons",
-          "fields": [
-            {
-              "name": "button",
-              "type": "group",
-              "label": "Button",
-              "fields": [
-                {
-                  "name": "text",
-                  "type": "text",
-                  "label": "Text"
-                },
-                {
-                  "name": "url",
-                  "type": "text",
-                  "label": "URL"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "footer-settings",
-      "label": "Footer Settings",
-      "admin": {
-        "group": "Footer Configuration",
-        "description": "Manage global footer settings like the logo, text, and links."
-      },
-      "access": {},
-      "fields": [
-        {
-          "name": "footerLogo",
-          "type": "upload",
-          "relationTo": "media",
-          "label": "Logo"
-        },
-        {
-          "name": "footerText",
-          "type": "richtext",
-          "label": "Text"
-        },
-        {
-          "name": "footerAddress",
-          "type": "text",
-          "label": "Address"
-        },
-        {
-          "name": "footerPhone",
-          "type": "text",
-          "label": "Phone"
-        },
-        {
-          "name": "footerEmail",
-          "type": "text",
-          "label": "Email"
-        },
-        {
-          "name": "footerHours",
-          "type": "array",
-          "label": "Hours",
-          "fields": [
-            {
-              "name": "hour",
-              "type": "text",
-              "label": "Hour"
-            }
-          ]
-        },
-        {
-          "name": "footerMenu",
-          "type": "array",
-          "label": "Menu",
-          "fields": [
-            {
-              "name": "menu",
-              "type": "relationship",
-              "relationTo": "menu"
-            }
-          ]
-        },
-        {
-          "name": "footerButtons",
-          "type": "array",
-          "label": "Buttons",
-          "fields": [
-            {
-              "name": "button",
-              "type": "group",
-              "label": "Button",
-              "fields": [
-                {
-                  "name": "text",
-                  "type": "text",
-                  "label": "Text"
-                },
-                {
-                  "name": "url",
-                  "type": "text",
-                  "label": "URL"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "footerForm",
-          "type": "relationship",
-          "relationTo": "forms",
-          "label": "Form"
         }
       ]
     }

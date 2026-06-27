@@ -1,7 +1,7 @@
 // Kyro CMS configuration for the Ledeoya site.
 // Defines the Drizzle adapter, admin overrides, collections, globals, and auth settings.
 import { defineKyroConfig } from "@kyro-cms/core";
-import { templateCollections } from "@kyro-cms/core/templates";
+import { templateCollections, productsCollection } from "@kyro-cms/core/templates";
 import { createDrizzleAdapter } from "@kyro-cms/core";
 import { coreSettingsGlobals } from "@kyro-cms/core/templates";
 import { messagesCollection } from "@/ledeoyaCollections/messages";
@@ -41,7 +41,7 @@ export default defineKyroConfig({
     },
     // Register site-specific content collections visible in the Kyro admin.
     collections: [
-      ...templateCollections.starter,
+      ...templateCollections.starter, productsCollection,
       tripsCollection,
       destinationsCollection,
       servicesCollection,
