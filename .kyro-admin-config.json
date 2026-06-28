@@ -19,7 +19,7 @@
       "seo": true,
       "fields": [
         {
-          "name": "mainTabs",
+          "name": "tabs",
           "type": "tabs",
           "tabs": [
             {
@@ -276,7 +276,7 @@
       "seo": true,
       "fields": [
         {
-          "name": "mainTabs",
+          "name": "tabs",
           "type": "tabs",
           "tabs": [
             {
@@ -327,12 +327,12 @@
                               "label": "Hero Slides",
                               "fields": [
                                 {
-                                  "name": "heading",
+                                  "name": "title",
                                   "type": "text",
                                   "label": "Heading"
                                 },
                                 {
-                                  "name": "subheading",
+                                  "name": "subtitle",
                                   "type": "textarea",
                                   "label": "Subheading"
                                 },
@@ -375,12 +375,12 @@
                           },
                           "fields": [
                             {
-                              "name": "heading",
+                              "name": "title",
                               "type": "text",
                               "label": "Heading"
                             },
                             {
-                              "name": "subheading",
+                              "name": "subtitle",
                               "type": "textarea",
                               "label": "Subheading"
                             },
@@ -469,7 +469,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -729,7 +729,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -966,7 +966,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1066,12 +1066,12 @@
                       "label": "Feature Grid",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
                         {
-                          "name": "sectionSubtitle",
+                          "name": "subtitle",
                           "type": "textarea",
                           "label": "Section Subtitle"
                         },
@@ -1168,7 +1168,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1268,12 +1268,12 @@
                       "label": "CTA Banner",
                       "fields": [
                         {
-                          "name": "headline",
+                          "name": "title",
                           "type": "text",
                           "label": "Headline"
                         },
                         {
-                          "name": "subheading",
+                          "name": "subtitle",
                           "type": "textarea",
                           "label": "Subheading"
                         },
@@ -1360,7 +1360,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1460,12 +1460,12 @@
                       "label": "Testimonials",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
                         {
-                          "name": "sectionSubtitle",
+                          "name": "subtitle",
                           "type": "text",
                           "label": "Section Subheading"
                         },
@@ -1591,7 +1591,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1691,7 +1691,7 @@
                       "label": "FAQ Section",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
@@ -1718,7 +1718,7 @@
                           ]
                         },
                         {
-                          "name": "footerHeading",
+                          "name": "footerTitle",
                           "type": "text",
                           "label": "Footer Heading (e.g. Still have questions?)"
                         },
@@ -1787,7 +1787,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -1887,7 +1887,7 @@
                       "label": "Stats / Metrics",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
@@ -1988,7 +1988,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2088,7 +2088,7 @@
                       "label": "Logo Cloud / Partners",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
@@ -2175,7 +2175,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2275,12 +2275,12 @@
                       "label": "Pricing Plans",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
                         {
-                          "name": "sectionSubtitle",
+                          "name": "subtitle",
                           "type": "textarea",
                           "label": "Section Subtitle"
                         },
@@ -2420,7 +2420,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2520,12 +2520,12 @@
                       "label": "Team Showcase",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
                         {
-                          "name": "sectionSubtitle",
+                          "name": "subtitle",
                           "type": "textarea",
                           "label": "Section Subtitle"
                         },
@@ -2642,7 +2642,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2742,12 +2742,12 @@
                       "label": "Hand-Picked Feed",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
                         {
-                          "name": "sectionSubtitle",
+                          "name": "subtitle",
                           "type": "textarea",
                           "label": "Section Subtitle"
                         },
@@ -2835,7 +2835,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -2935,12 +2935,12 @@
                       "label": "Process Steps / Timeline",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
                         {
-                          "name": "sectionSubtitle",
+                          "name": "subtitle",
                           "type": "textarea",
                           "label": "Section Subtitle"
                         },
@@ -3032,7 +3032,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -3208,7 +3208,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -3308,12 +3308,12 @@
                       "label": "Cinematic Video Showcase",
                       "fields": [
                         {
-                          "name": "sectionTitle",
+                          "name": "title",
                           "type": "text",
                           "label": "Section Heading"
                         },
                         {
-                          "name": "sectionSubtitle",
+                          "name": "subtitle",
                           "type": "textarea",
                           "label": "Section Subtitle"
                         },
@@ -3410,7 +3410,7 @@
                               },
                               "fields": [
                                 {
-                                  "name": "richText",
+                                  "name": "content",
                                   "type": "richtext",
                                   "label": "Content"
                                 }
@@ -3849,6 +3849,7 @@
         ],
         "description": "Form submission entries"
       },
+      "access": {},
       "fields": [
         {
           "name": "form",
@@ -4327,6 +4328,10 @@
           "label": "Location",
           "options": [
             {
+              "label": "Choose Location",
+              "value": ""
+            },
+            {
               "label": "Header",
               "value": "header"
             },
@@ -4369,26 +4374,6 @@
               "label": "Menu Item",
               "type": "array",
               "fields": [
-                {
-                  "name": "style",
-                  "type": "select",
-                  "label": "Link Style",
-                  "defaultValue": "link",
-                  "options": [
-                    {
-                      "label": "Standard Link",
-                      "value": "link"
-                    },
-                    {
-                      "label": "Primary Button",
-                      "value": "primary_button"
-                    },
-                    {
-                      "label": "Secondary Button",
-                      "value": "secondary_button"
-                    }
-                  ]
-                },
                 {
                   "name": "linkType",
                   "type": "select",
@@ -4454,7 +4439,7 @@
       "seo": true,
       "fields": [
         {
-          "name": "mainTabs",
+          "name": "tabs",
           "type": "tabs",
           "tabs": [
             {
@@ -5024,6 +5009,7 @@
       "versions": {
         "drafts": true
       },
+      "seo": true,
       "slug": "services",
       "label": "Services",
       "singularLabel": "Service",
@@ -5048,6 +5034,25 @@
           "label": "Description"
         },
         {
+          "name": "stats",
+          "type": "array",
+          "label": "Statistics",
+          "fields": [
+            {
+              "name": "value",
+              "type": "text",
+              "label": "Value",
+              "required": true
+            },
+            {
+              "name": "label",
+              "type": "text",
+              "label": "Label",
+              "required": true
+            }
+          ]
+        },
+        {
           "name": "ServiceDetails",
           "type": "group",
           "label": "Service Details",
@@ -5066,8 +5071,72 @@
                   "name": "content",
                   "type": "textarea",
                   "label": "Content"
+                },
+                {
+                  "name": "icon",
+                  "type": "text",
+                  "label": "Icon"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "processSteps",
+          "type": "array",
+          "label": "Process Steps",
+          "fields": [
+            {
+              "name": "stepNumber",
+              "type": "text",
+              "label": "Step Number"
+            },
+            {
+              "name": "title",
+              "type": "text",
+              "label": "Title"
+            },
+            {
+              "name": "description",
+              "type": "textarea",
+              "label": "Description"
+            }
+          ]
+        },
+        {
+          "name": "cta",
+          "type": "group",
+          "label": "Call To Action",
+          "fields": [
+            {
+              "name": "subtitle",
+              "type": "text",
+              "label": "Subtitle"
+            },
+            {
+              "name": "title",
+              "type": "text",
+              "label": "Title"
+            },
+            {
+              "name": "primaryButtonLabel",
+              "type": "text",
+              "label": "Primary Button Label"
+            },
+            {
+              "name": "primaryButtonLink",
+              "type": "text",
+              "label": "Primary Button Link"
+            },
+            {
+              "name": "secondaryButtonLabel",
+              "type": "text",
+              "label": "Secondary Button Label"
+            },
+            {
+              "name": "secondaryButtonLink",
+              "type": "text",
+              "label": "Secondary Button Link"
             }
           ]
         },
@@ -5356,11 +5425,179 @@
         },
         {
           "name": "mapApiKey",
-          "type": "text",
+          "type": "password",
           "label": "Map API Key",
           "admin": {
             "description": "API Key for Map Integrations (Google Maps, Mapbox, etc.)"
           }
+        },
+        {
+          "name": "headerBlocks",
+          "type": "blocks",
+          "label": "Header Elements",
+          "blocks": [
+            {
+              "slug": "text",
+              "label": "Text Paragraph",
+              "fields": [
+                {
+                  "name": "text",
+                  "type": "text",
+                  "label": "Text Content",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "slug": "textarea",
+              "label": "Text Area",
+              "fields": [
+                {
+                  "name": "text",
+                  "type": "textarea",
+                  "label": "Text Content",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "slug": "form",
+              "label": "Form Selection",
+              "fields": [
+                {
+                  "name": "form",
+                  "type": "relationship",
+                  "label": "Select Form",
+                  "relationTo": "forms",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "slug": "button",
+              "label": "Button Link",
+              "fields": [
+                {
+                  "name": "label",
+                  "type": "text",
+                  "label": "Button Label",
+                  "required": true
+                },
+                {
+                  "name": "url",
+                  "type": "text",
+                  "label": "URL",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "slug": "image",
+              "label": "Image Upload",
+              "fields": [
+                {
+                  "name": "image",
+                  "type": "upload",
+                  "label": "Image",
+                  "relationTo": "media"
+                },
+                {
+                  "name": "alt",
+                  "type": "text",
+                  "label": "Alt Text"
+                },
+                {
+                  "name": "linkUrl",
+                  "type": "text",
+                  "label": "Link URL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "footerBlocks",
+          "type": "blocks",
+          "label": "Footer Elements",
+          "blocks": [
+            {
+              "slug": "text",
+              "label": "Text Paragraph",
+              "fields": [
+                {
+                  "name": "text",
+                  "type": "text",
+                  "label": "Text Content",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "slug": "textarea",
+              "label": "Text Area",
+              "fields": [
+                {
+                  "name": "text",
+                  "type": "textarea",
+                  "label": "Text Content",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "slug": "form",
+              "label": "Form Selection",
+              "fields": [
+                {
+                  "name": "form",
+                  "type": "relationship",
+                  "label": "Select Form",
+                  "relationTo": "forms",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "slug": "button",
+              "label": "Button Link",
+              "fields": [
+                {
+                  "name": "label",
+                  "type": "text",
+                  "label": "Button Label",
+                  "required": true
+                },
+                {
+                  "name": "url",
+                  "type": "text",
+                  "label": "URL",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "slug": "image",
+              "label": "Image Upload",
+              "fields": [
+                {
+                  "name": "image",
+                  "type": "upload",
+                  "label": "Image",
+                  "relationTo": "media"
+                },
+                {
+                  "name": "alt",
+                  "type": "text",
+                  "label": "Alt Text"
+                },
+                {
+                  "name": "linkUrl",
+                  "type": "text",
+                  "label": "Link URL"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
