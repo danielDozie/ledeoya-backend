@@ -608,7 +608,7 @@
                                 },
                                 {
                                   "name": "icon",
-                                  "type": "text",
+                                  "type": "icon",
                                   "label": "Icon"
                                 },
                                 {
@@ -654,7 +654,7 @@
                             },
                             {
                               "name": "icon",
-                              "type": "text",
+                              "type": "icon",
                               "label": "Icon"
                             },
                             {
@@ -855,7 +855,7 @@
                             },
                             {
                               "name": "icon",
-                              "type": "text",
+                              "type": "icon",
                               "label": "Icon Name"
                             },
                             {
@@ -1092,7 +1092,7 @@
                             },
                             {
                               "name": "icon",
-                              "type": "text",
+                              "type": "icon",
                               "label": "Icon Name"
                             },
                             {
@@ -5037,6 +5037,24 @@
           "name": "stats",
           "type": "array",
           "label": "Statistics",
+          "defaultValue": [
+            {
+              "value": "10+",
+              "label": "Years Experience"
+            },
+            {
+              "value": "500+",
+              "label": "Happy Clients"
+            },
+            {
+              "value": "99%",
+              "label": "Success Rate"
+            },
+            {
+              "value": "24/7",
+              "label": "Support Available"
+            }
+          ],
           "fields": [
             {
               "name": "value",
@@ -5074,7 +5092,7 @@
                 },
                 {
                   "name": "icon",
-                  "type": "text",
+                  "type": "icon",
                   "label": "Icon"
                 }
               ]
@@ -5085,6 +5103,28 @@
           "name": "processSteps",
           "type": "array",
           "label": "Process Steps",
+          "defaultValue": [
+            {
+              "stepNumber": "01",
+              "title": "Discovery",
+              "description": "Initial consultation to understand your requirements and objectives."
+            },
+            {
+              "stepNumber": "02",
+              "title": "Strategy",
+              "description": "Developing a tailored plan to address your specific needs."
+            },
+            {
+              "stepNumber": "03",
+              "title": "Implementation",
+              "description": "Executing the strategy with our expert team."
+            },
+            {
+              "stepNumber": "04",
+              "title": "Optimization",
+              "description": "Reviewing outcomes and refining for maximum impact."
+            }
+          ],
           "fields": [
             {
               "name": "stepNumber",
@@ -5107,6 +5147,14 @@
           "name": "cta",
           "type": "group",
           "label": "Call To Action",
+          "defaultValue": {
+            "subtitle": "Ready to get started?",
+            "title": "Transform Your Business Today",
+            "primaryButtonLabel": "Contact Us",
+            "primaryButtonLink": "/contact",
+            "secondaryButtonLabel": "Learn More",
+            "secondaryButtonLink": "/about"
+          },
           "fields": [
             {
               "name": "subtitle",
@@ -5278,118 +5326,6 @@
           "admin": {}
         },
         {
-          "name": "maintenanceEnabled",
-          "type": "checkbox",
-          "label": "Enable Maintenance Mode",
-          "defaultValue": false,
-          "admin": {
-            "description": "When enabled, the public site will show a maintenance page."
-          }
-        },
-        {
-          "name": "maintenance",
-          "type": "group",
-          "label": "Maintenance Configuration",
-          "admin": {},
-          "fields": [
-            {
-              "name": "message",
-              "type": "textarea",
-              "label": "Maintenance Message",
-              "admin": {
-                "placeholder": "We'll be back soon! We're performing scheduled maintenance."
-              }
-            },
-            {
-              "name": "bypassToken",
-              "type": "text",
-              "label": "Bypass Token",
-              "admin": {
-                "description": "Append ?bypass=YOUR_TOKEN to URL to view the site while in maintenance mode."
-              }
-            }
-          ]
-        },
-        {
-          "name": "enableI18n",
-          "type": "checkbox",
-          "label": "Enable Internationalization (i18n)",
-          "defaultValue": false,
-          "admin": {
-            "description": "Enable support for multiple languages."
-          }
-        },
-        {
-          "name": "i18n",
-          "type": "group",
-          "label": "Localization",
-          "admin": {},
-          "fields": [
-            {
-              "name": "language",
-              "type": "select",
-              "label": "Default Language",
-              "defaultValue": "en",
-              "options": [
-                {
-                  "label": "English",
-                  "value": "en"
-                },
-                {
-                  "label": "Spanish",
-                  "value": "es"
-                },
-                {
-                  "label": "French",
-                  "value": "fr"
-                },
-                {
-                  "label": "German",
-                  "value": "de"
-                },
-                {
-                  "label": "Portuguese",
-                  "value": "pt"
-                },
-                {
-                  "label": "Italian",
-                  "value": "it"
-                },
-                {
-                  "label": "Dutch",
-                  "value": "nl"
-                },
-                {
-                  "label": "Russian",
-                  "value": "ru"
-                },
-                {
-                  "label": "Japanese",
-                  "value": "ja"
-                },
-                {
-                  "label": "Chinese",
-                  "value": "zh"
-                },
-                {
-                  "label": "Korean",
-                  "value": "ko"
-                },
-                {
-                  "label": "Arabic",
-                  "value": "ar"
-                }
-              ]
-            },
-            {
-              "name": "timezone",
-              "type": "text",
-              "label": "Timezone",
-              "defaultValue": "UTC"
-            }
-          ]
-        },
-        {
           "name": "analyticsEnabled",
           "type": "checkbox",
           "label": "Enable Analytics & Tracking",
@@ -5399,7 +5335,12 @@
           "name": "analytics",
           "type": "group",
           "label": "Tracking Configurations",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "field": "analyticsEnabled",
+              "equals": true
+            }
+          },
           "fields": [
             {
               "name": "googleAnalyticsId",
@@ -5432,168 +5373,187 @@
           }
         },
         {
-          "name": "headerBlocks",
-          "type": "blocks",
-          "label": "Header Elements",
-          "blocks": [
-            {
-              "slug": "text",
-              "label": "Text Paragraph",
-              "fields": [
-                {
-                  "name": "text",
-                  "type": "text",
-                  "label": "Text Content",
-                  "required": true
-                }
-              ]
-            },
-            {
-              "slug": "textarea",
-              "label": "Text Area",
-              "fields": [
-                {
-                  "name": "text",
-                  "type": "textarea",
-                  "label": "Text Content",
-                  "required": true
-                }
-              ]
-            },
-            {
-              "slug": "form",
-              "label": "Form Selection",
-              "fields": [
-                {
-                  "name": "form",
-                  "type": "relationship",
-                  "label": "Select Form",
-                  "relationTo": "forms",
-                  "required": true
-                }
-              ]
-            },
-            {
-              "slug": "button",
-              "label": "Button Link",
-              "fields": [
-                {
-                  "name": "label",
-                  "type": "text",
-                  "label": "Button Label",
-                  "required": true
-                },
-                {
-                  "name": "url",
-                  "type": "text",
-                  "label": "URL",
-                  "required": true
-                }
-              ]
-            },
-            {
-              "slug": "image",
-              "label": "Image Upload",
-              "fields": [
-                {
-                  "name": "image",
-                  "type": "upload",
-                  "label": "Image",
-                  "relationTo": "media"
-                },
-                {
-                  "name": "alt",
-                  "type": "text",
-                  "label": "Alt Text"
-                },
-                {
-                  "name": "linkUrl",
-                  "type": "text",
-                  "label": "Link URL"
-                }
-              ]
-            }
-          ]
+          "name": "enableHeaderFooterElements",
+          "type": "checkbox",
+          "label": "Enable Header and Footer Elements",
+          "defaultValue": false
         },
         {
-          "name": "footerBlocks",
-          "type": "blocks",
-          "label": "Footer Elements",
-          "blocks": [
+          "name": "headerFooterSettings",
+          "type": "group",
+          "label": "Header & Footer Settings",
+          "admin": {
+            "condition": {
+              "field": "enableHeaderFooterElements",
+              "equals": true
+            }
+          },
+          "fields": [
             {
-              "slug": "text",
-              "label": "Text Paragraph",
-              "fields": [
+              "name": "headerBlocks",
+              "type": "blocks",
+              "label": "Header Elements",
+              "blocks": [
                 {
-                  "name": "text",
-                  "type": "text",
-                  "label": "Text Content",
-                  "required": true
-                }
-              ]
-            },
-            {
-              "slug": "textarea",
-              "label": "Text Area",
-              "fields": [
-                {
-                  "name": "text",
-                  "type": "textarea",
-                  "label": "Text Content",
-                  "required": true
-                }
-              ]
-            },
-            {
-              "slug": "form",
-              "label": "Form Selection",
-              "fields": [
-                {
-                  "name": "form",
-                  "type": "relationship",
-                  "label": "Select Form",
-                  "relationTo": "forms",
-                  "required": true
-                }
-              ]
-            },
-            {
-              "slug": "button",
-              "label": "Button Link",
-              "fields": [
-                {
-                  "name": "label",
-                  "type": "text",
-                  "label": "Button Label",
-                  "required": true
+                  "slug": "text",
+                  "label": "Text Paragraph",
+                  "fields": [
+                    {
+                      "name": "text",
+                      "type": "text",
+                      "label": "Text Content",
+                      "required": true
+                    }
+                  ]
                 },
                 {
-                  "name": "url",
-                  "type": "text",
-                  "label": "URL",
-                  "required": true
+                  "slug": "textarea",
+                  "label": "Text Area",
+                  "fields": [
+                    {
+                      "name": "text",
+                      "type": "textarea",
+                      "label": "Text Content",
+                      "required": true
+                    }
+                  ]
+                },
+                {
+                  "slug": "form",
+                  "label": "Form Selection",
+                  "fields": [
+                    {
+                      "name": "form",
+                      "type": "relationship",
+                      "label": "Select Form",
+                      "relationTo": "forms",
+                      "required": true
+                    }
+                  ]
+                },
+                {
+                  "slug": "button",
+                  "label": "Button Link",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "type": "text",
+                      "label": "Button Label",
+                      "required": true
+                    },
+                    {
+                      "name": "url",
+                      "type": "text",
+                      "label": "URL",
+                      "required": true
+                    }
+                  ]
+                },
+                {
+                  "slug": "image",
+                  "label": "Image Upload",
+                  "fields": [
+                    {
+                      "name": "image",
+                      "type": "upload",
+                      "label": "Image",
+                      "relationTo": "media"
+                    },
+                    {
+                      "name": "alt",
+                      "type": "text",
+                      "label": "Alt Text"
+                    },
+                    {
+                      "name": "linkUrl",
+                      "type": "text",
+                      "label": "Link URL"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "slug": "image",
-              "label": "Image Upload",
-              "fields": [
+              "name": "footerBlocks",
+              "type": "blocks",
+              "label": "Footer Elements",
+              "blocks": [
                 {
-                  "name": "image",
-                  "type": "upload",
-                  "label": "Image",
-                  "relationTo": "media"
+                  "slug": "text",
+                  "label": "Text Paragraph",
+                  "fields": [
+                    {
+                      "name": "text",
+                      "type": "text",
+                      "label": "Text Content",
+                      "required": true
+                    }
+                  ]
                 },
                 {
-                  "name": "alt",
-                  "type": "text",
-                  "label": "Alt Text"
+                  "slug": "textarea",
+                  "label": "Text Area",
+                  "fields": [
+                    {
+                      "name": "text",
+                      "type": "textarea",
+                      "label": "Text Content",
+                      "required": true
+                    }
+                  ]
                 },
                 {
-                  "name": "linkUrl",
-                  "type": "text",
-                  "label": "Link URL"
+                  "slug": "form",
+                  "label": "Form Selection",
+                  "fields": [
+                    {
+                      "name": "form",
+                      "type": "relationship",
+                      "label": "Select Form",
+                      "relationTo": "forms",
+                      "required": true
+                    }
+                  ]
+                },
+                {
+                  "slug": "button",
+                  "label": "Button Link",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "type": "text",
+                      "label": "Button Label",
+                      "required": true
+                    },
+                    {
+                      "name": "url",
+                      "type": "text",
+                      "label": "URL",
+                      "required": true
+                    }
+                  ]
+                },
+                {
+                  "slug": "image",
+                  "label": "Image Upload",
+                  "fields": [
+                    {
+                      "name": "image",
+                      "type": "upload",
+                      "label": "Image",
+                      "relationTo": "media"
+                    },
+                    {
+                      "name": "alt",
+                      "type": "text",
+                      "label": "Alt Text"
+                    },
+                    {
+                      "name": "linkUrl",
+                      "type": "text",
+                      "label": "Link URL"
+                    }
+                  ]
                 }
               ]
             }
@@ -5670,7 +5630,12 @@
           "name": "meta",
           "type": "group",
           "label": "Technical Meta Settings",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "field": "seoMode",
+              "equals": "advanced"
+            }
+          },
           "fields": [
             {
               "name": "robots",
@@ -5727,7 +5692,20 @@
           "name": "sitemap",
           "type": "group",
           "label": "Sitemap Configuration",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "and": [
+                {
+                  "field": "enableSitemap",
+                  "equals": true
+                },
+                {
+                  "field": "seoMode",
+                  "equals": "advanced"
+                }
+              ]
+            }
+          },
           "fields": [
             {
               "name": "sitemapUrls",
@@ -5741,7 +5719,12 @@
           "name": "robotsTxt",
           "type": "textarea",
           "label": "Custom robots.txt",
-          "admin": {}
+          "admin": {
+            "condition": {
+              "field": "seoMode",
+              "equals": "advanced"
+            }
+          }
         },
         {
           "name": "social",
@@ -6012,7 +5995,12 @@
           "name": "smtp",
           "type": "group",
           "label": "SMTP Settings",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "field": "provider",
+              "equals": "smtp"
+            }
+          },
           "fields": [
             {
               "name": "smtpService",
@@ -6058,6 +6046,10 @@
               "type": "text",
               "label": "Host",
               "admin": {
+                "condition": {
+                  "field": "smtpService",
+                  "equals": "custom"
+                },
                 "placeholder": "smtp.example.com"
               }
             },
@@ -6066,7 +6058,12 @@
               "type": "number",
               "label": "Port",
               "defaultValue": 587,
-              "admin": {}
+              "admin": {
+                "condition": {
+                  "field": "smtpService",
+                  "equals": "custom"
+                }
+              }
             },
             {
               "name": "username",
@@ -6090,7 +6087,12 @@
           "name": "resend",
           "type": "group",
           "label": "Resend Settings",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "field": "provider",
+              "equals": "resend"
+            }
+          },
           "fields": [
             {
               "name": "apiKey",
@@ -6104,7 +6106,12 @@
           "name": "sendgrid",
           "type": "group",
           "label": "SendGrid Settings",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "field": "provider",
+              "equals": "sendgrid"
+            }
+          },
           "fields": [
             {
               "name": "apiKey",
@@ -6118,7 +6125,12 @@
           "name": "mailgun",
           "type": "group",
           "label": "Mailgun Settings",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "field": "provider",
+              "equals": "mailgun"
+            }
+          },
           "fields": [
             {
               "name": "apiKey",
@@ -6154,7 +6166,12 @@
           "name": "ses",
           "type": "group",
           "label": "AWS SES Settings",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "field": "provider",
+              "equals": "ses"
+            }
+          },
           "fields": [
             {
               "name": "accessKeyId",
@@ -6625,7 +6642,12 @@
               "name": "cors",
               "type": "group",
               "label": "CORS Settings",
-              "admin": {},
+              "admin": {
+                "condition": {
+                  "field": "apiAccess.graphqlEnabled",
+                  "equals": true
+                }
+              },
               "fields": [
                 {
                   "name": "allowedOrigins",
@@ -6643,7 +6665,12 @@
           "name": "rateLimiting",
           "type": "group",
           "label": "Rate Limiting Configuration",
-          "admin": {},
+          "admin": {
+            "condition": {
+              "field": "rateLimiting.enabled",
+              "equals": true
+            }
+          },
           "fields": [
             {
               "name": "enabled",
@@ -6656,14 +6683,24 @@
               "type": "number",
               "label": "Max Requests",
               "defaultValue": 100,
-              "admin": {}
+              "admin": {
+                "condition": {
+                  "field": "enabled",
+                  "equals": true
+                }
+              }
             },
             {
               "name": "windowMs",
               "type": "number",
               "label": "Window (ms)",
               "defaultValue": 60000,
-              "admin": {}
+              "admin": {
+                "condition": {
+                  "field": "enabled",
+                  "equals": true
+                }
+              }
             }
           ]
         }
