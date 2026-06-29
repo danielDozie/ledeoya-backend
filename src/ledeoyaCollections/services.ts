@@ -17,7 +17,14 @@ export const servicesCollection: CollectionConfig = {
     { name: 'title', type: 'text', label: 'Title', required: true },
     { name: 'description', type: 'textarea', label: 'Description' },
     {
-      name: 'stats', type: 'array', label: 'Statistics', fields: [
+      name: 'stats', type: 'array', label: 'Statistics',
+      defaultValue: [
+        { value: '10+', label: 'Years Experience' },
+        { value: '500+', label: 'Happy Clients' },
+        { value: '99%', label: 'Success Rate' },
+        { value: '24/7', label: 'Support Available' },
+      ],
+      fields: [
         { name: 'value', type: 'text', label: 'Value', required: true },
         { name: 'label', type: 'text', label: 'Label', required: true },
       ]
@@ -28,20 +35,36 @@ export const servicesCollection: CollectionConfig = {
           name: 'serviceItems', type: 'array', label: 'Service Items', fields: [
             { name: 'title', type: 'text', label: 'Title' },
             { name: 'content', type: 'textarea', label: 'Content' },
-            { name: 'icon', type: 'text', label: 'Icon' },
+            { name: 'icon', type: 'icon', label: 'Icon' },
           ]
         },
       ]
     },
     {
-      name: 'processSteps', type: 'array', label: 'Process Steps', fields: [
+      name: 'processSteps', type: 'array', label: 'Process Steps',
+      defaultValue: [
+        { stepNumber: '01', title: 'Discovery', description: 'Initial consultation to understand your requirements and objectives.' },
+        { stepNumber: '02', title: 'Strategy', description: 'Developing a tailored plan to address your specific needs.' },
+        { stepNumber: '03', title: 'Implementation', description: 'Executing the strategy with our expert team.' },
+        { stepNumber: '04', title: 'Optimization', description: 'Reviewing outcomes and refining for maximum impact.' },
+      ],
+      fields: [
         { name: 'stepNumber', type: 'text', label: 'Step Number' },
         { name: 'title', type: 'text', label: 'Title' },
         { name: 'description', type: 'textarea', label: 'Description' },
       ]
     },
     {
-      name: 'cta', type: 'group', label: 'Call To Action', fields: [
+      name: 'cta', type: 'group', label: 'Call To Action',
+      defaultValue: {
+        subtitle: 'Ready to get started?',
+        title: 'Transform Your Business Today',
+        primaryButtonLabel: 'Contact Us',
+        primaryButtonLink: '/contact',
+        secondaryButtonLabel: 'Learn More',
+        secondaryButtonLink: '/about',
+      },
+      fields: [
         { name: 'subtitle', type: 'text', label: 'Subtitle' },
         { name: 'title', type: 'text', label: 'Title' },
         { name: 'primaryButtonLabel', type: 'text', label: 'Primary Button Label' },
