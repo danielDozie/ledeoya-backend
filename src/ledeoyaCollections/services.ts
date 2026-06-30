@@ -17,18 +17,17 @@ export const servicesCollection: CollectionConfig = {
     { name: 'title', type: 'text', label: 'Title', required: true },
     { name: 'description', type: 'textarea', label: 'Description' },
     {
-      name: 'stats', type: 'array', label: 'Statistics',
-      defaultValue: [
-        { value: '10+', label: 'Years Experience' },
-        { value: '500+', label: 'Happy Clients' },
-        { value: '99%', label: 'Success Rate' },
-        { value: '24/7', label: 'Support Available' },
-      ],
-      fields: [
-        { name: 'value', type: 'text', label: 'Value', required: true },
-        { name: 'label', type: 'text', label: 'Label', required: true },
+      name: 'StatsDetails', type: 'group', label: 'Stats Details', fields: [
+        {
+          name: 'stats', type: 'array', label: 'Statistics',
+          fields: [
+            { name: 'value', type: 'text', label: 'Value', required: true },
+            { name: 'label', type: 'text', label: 'Label', required: true },
+          ]
+        },
       ]
     },
+
     {
       name: 'ServiceDetails', type: 'group', label: 'Service Details', fields: [
         {

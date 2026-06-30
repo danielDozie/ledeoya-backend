@@ -5034,39 +5034,28 @@
           "label": "Description"
         },
         {
-          "name": "stats",
-          "type": "array",
-          "label": "Statistics",
-          "defaultValue": [
-            {
-              "value": "10+",
-              "label": "Years Experience"
-            },
-            {
-              "value": "500+",
-              "label": "Happy Clients"
-            },
-            {
-              "value": "99%",
-              "label": "Success Rate"
-            },
-            {
-              "value": "24/7",
-              "label": "Support Available"
-            }
-          ],
+          "name": "StatsDetails",
+          "type": "group",
+          "label": "Stats Details",
           "fields": [
             {
-              "name": "value",
-              "type": "text",
-              "label": "Value",
-              "required": true
-            },
-            {
-              "name": "label",
-              "type": "text",
-              "label": "Label",
-              "required": true
+              "name": "stats",
+              "type": "array",
+              "label": "Statistics",
+              "fields": [
+                {
+                  "name": "value",
+                  "type": "text",
+                  "label": "Value",
+                  "required": true
+                },
+                {
+                  "name": "label",
+                  "type": "text",
+                  "label": "Label",
+                  "required": true
+                }
+              ]
             }
           ]
         },
