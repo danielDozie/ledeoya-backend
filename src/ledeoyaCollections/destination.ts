@@ -1,6 +1,6 @@
 import type { CollectionConfig } from "@kyro-cms/core";
 
-import { RegionField, CountryField } from "kyro-field-locations";
+import { RegionField, CountryField } from "@kyro-cms/field-locations";
 
 export const destinationsCollection: CollectionConfig = {
   versions: {
