@@ -11,23 +11,23 @@
     "kyro:generate": "kyro generate"
   },
   "dependencies": {
-    "@astrojs/node": "^10.1.3",
-    "@astrojs/react": "^5.0.4",
-    "@kyro-cms/admin": "^0.12.4",
-    "@kyro-cms/core": "^0.12.4",
-    "kyro-field-locations": "^0.12.3",
-    "@tailwindcss/vite": "^4.0.0",
-    "astro": "^6.3.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "@astrojs/node": "^10.1.4",
+    "@astrojs/react": "^5.0.7",
+    "@kyro-cms/admin": "0.12.6",
+    "@kyro-cms/core": "0.12.6",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^6.4.8",
+    "kyro-field-locations": "^0.12.6",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "sharp": "0.34.5",
-    "tailwindcss": "^4.0.0"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "playwright": "^1.60.0",
-    "typescript": "^5.7.3"
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "playwright": "^1.61.1",
+    "typescript": "^5.9.3"
   },
   "overrides": {
     "vite": "^7"

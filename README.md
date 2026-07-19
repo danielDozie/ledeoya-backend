@@ -12,7 +12,6 @@ A custom Astro site with Kyro CMS integration, React support, Tailwind CSS, and 
 - Tailwind CSS integration with Vite
 - Kyro CMS admin and API powered by `@kyro-cms/core` and `@kyro-cms/admin`
 - Custom content collections in `src/ledeoyaCollections`
-- Local Kyro package references using `file:../kyro-cms`
 
 ## Requirements
 
@@ -53,7 +52,7 @@ Start the Astro development server:
 pnpm dev
 ```
 
-If the Kyro packages are available locally, you can also start the Kyro dev tooling:
+Start Kyro dev tooling (if applicable):
 
 ```bash
 pnpm run kyro:dev
@@ -104,24 +103,15 @@ pnpm preview
 
 ## Content collections
 
-The project includes these Kyro collections:
+The project includes these custom Kyro collections:
 
 - `trips`
 - `destinations`
 - `services`
-- `testimonials`
+- `testimonials` (currently commented out in config)
 - `messages`
 
-It also uses starter content templates from Kyro.
-
-## Kyro integration notes
-
-The project depends on local Kyro packages in `package.json`:
-
-- `@kyro-cms/admin: file:../kyro-cms/admin`
-- `@kyro-cms/core: file:../kyro-cms`
-
-If these paths do not exist, install or link them before running the site.
+It also uses starter content templates from Kyro and the products collection.
 
 ## Contributing
 
