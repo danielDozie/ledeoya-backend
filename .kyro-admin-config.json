@@ -19,6 +19,17 @@
       "seo": true,
       "fields": [
         {
+          "name": "slug",
+          "type": "text",
+          "required": true,
+          "label": "Slug",
+          "admin": {
+            "description": "The URL-friendly identifier for the post.",
+            "position": "sidebar",
+            "autoGenerate": "title"
+          }
+        },
+        {
           "name": "tabs",
           "type": "tabs",
           "tabs": [
@@ -180,17 +191,6 @@
           ]
         },
         {
-          "name": "slug",
-          "type": "text",
-          "required": true,
-          "label": "Slug",
-          "admin": {
-            "description": "The URL-friendly identifier for the post.",
-            "position": "sidebar",
-            "autoGenerate": "title"
-          }
-        },
-        {
           "name": "tags",
           "type": "list",
           "label": "Tags",
@@ -275,6 +275,16 @@
       },
       "seo": true,
       "fields": [
+        {
+          "name": "slug",
+          "type": "text",
+          "required": true,
+          "label": "Slug",
+          "admin": {
+            "position": "sidebar",
+            "autoGenerate": "title"
+          }
+        },
         {
           "name": "tabs",
           "type": "tabs",
@@ -3610,16 +3620,6 @@
           ]
         },
         {
-          "name": "slug",
-          "type": "text",
-          "required": true,
-          "label": "Slug",
-          "admin": {
-            "position": "sidebar",
-            "autoGenerate": "title"
-          }
-        },
-        {
           "name": "featuredImage",
           "type": "upload",
           "label": "Featured Image",
@@ -3651,6 +3651,16 @@
       },
       "fields": [
         {
+          "name": "slug",
+          "type": "text",
+          "required": true,
+          "label": "Slug",
+          "admin": {
+            "position": "sidebar",
+            "autoGenerate": "name"
+          }
+        },
+        {
           "name": "name",
           "type": "text",
           "required": true,
@@ -3660,16 +3670,6 @@
           "name": "description",
           "type": "textarea",
           "label": "Description"
-        },
-        {
-          "name": "slug",
-          "type": "text",
-          "required": true,
-          "label": "Slug",
-          "admin": {
-            "position": "sidebar",
-            "autoGenerate": "name"
-          }
         },
         {
           "name": "icon",
@@ -3721,6 +3721,16 @@
       },
       "fields": [
         {
+          "name": "slug",
+          "type": "text",
+          "required": true,
+          "label": "Slug",
+          "admin": {
+            "position": "sidebar",
+            "autoGenerate": "name"
+          }
+        },
+        {
           "name": "name",
           "type": "text",
           "required": true,
@@ -3730,16 +3740,6 @@
           "name": "subtitle",
           "type": "textarea",
           "label": "Subtitle"
-        },
-        {
-          "name": "slug",
-          "type": "text",
-          "required": true,
-          "label": "Slug",
-          "admin": {
-            "position": "sidebar",
-            "autoGenerate": "name"
-          }
         },
         {
           "name": "submitButtonText",
@@ -4148,6 +4148,7 @@
     {
       "slug": "users",
       "label": "Users",
+      "auth": true,
       "fields": [
         {
           "name": "name",
@@ -4250,6 +4251,7 @@
     {
       "slug": "audit_logs",
       "label": "Audit Logs",
+      "access": {},
       "fields": [
         {
           "name": "action",
@@ -4420,226 +4422,6 @@
           ]
         }
       ]
-    },
-    {
-      "slug": "products",
-      "label": "Products",
-      "labelPlural": "Products",
-      "singularLabel": "Product",
-      "admin": {
-        "useAsTitle": "title",
-        "defaultColumns": [
-          "title",
-          "slug",
-          "price",
-          "inventory"
-        ],
-        "description": "E-commerce products"
-      },
-      "seo": true,
-      "fields": [
-        {
-          "name": "tabs",
-          "type": "tabs",
-          "tabs": [
-            {
-              "label": "Content",
-              "fields": [
-                {
-                  "name": "title",
-                  "type": "text",
-                  "required": true,
-                  "label": "Title"
-                },
-                {
-                  "name": "description",
-                  "type": "richtext",
-                  "label": "Description"
-                }
-              ]
-            },
-            {
-              "label": "Inventory & Pricing",
-              "fields": [
-                {
-                  "name": "price",
-                  "type": "number",
-                  "required": true,
-                  "label": "Price"
-                },
-                {
-                  "name": "compareAtPrice",
-                  "type": "number",
-                  "label": "Compare at Price",
-                  "admin": {
-                    "description": "Original price for sale display"
-                  }
-                },
-                {
-                  "name": "costPrice",
-                  "type": "number",
-                  "label": "Cost Price",
-                  "admin": {
-                    "description": "For profit calculation"
-                  }
-                },
-                {
-                  "name": "sku",
-                  "type": "text",
-                  "required": true,
-                  "label": "SKU"
-                },
-                {
-                  "name": "barcode",
-                  "type": "text",
-                  "label": "Barcode"
-                },
-                {
-                  "name": "inventory",
-                  "type": "number",
-                  "label": "Inventory",
-                  "defaultValue": 0
-                },
-                {
-                  "name": "images",
-                  "type": "array",
-                  "label": "Images",
-                  "fields": [
-                    {
-                      "name": "url",
-                      "type": "text",
-                      "label": "URL"
-                    },
-                    {
-                      "name": "alt",
-                      "type": "text",
-                      "label": "Alt Text"
-                    }
-                  ]
-                },
-                {
-                  "name": "category",
-                  "type": "relationship",
-                  "label": "Category",
-                  "relationTo": "product-categories"
-                }
-              ]
-            },
-            {
-              "label": "SEO Settings",
-              "fields": [
-                {
-                  "name": "metaTitle",
-                  "type": "text",
-                  "label": "Meta Title",
-                  "admin": {
-                    "description": "The title used for search engines (recommended < 60 chars).",
-                    "autoGenerate": "title"
-                  }
-                },
-                {
-                  "name": "metaDescription",
-                  "type": "textarea",
-                  "label": "Meta Description",
-                  "admin": {
-                    "description": "A brief summary for search engines (recommended < 160 chars).",
-                    "autoGenerate": "content"
-                  }
-                },
-                {
-                  "name": "keywords",
-                  "type": "text",
-                  "label": "Keywords",
-                  "admin": {
-                    "description": "Comma-separated list of keywords for this page."
-                  }
-                },
-                {
-                  "name": "ogImage",
-                  "type": "upload",
-                  "label": "OpenGraph Image",
-                  "relationTo": "media",
-                  "admin": {
-                    "description": "The image shown when shared on social media."
-                  }
-                },
-                {
-                  "name": "twitter",
-                  "type": "group",
-                  "label": "Twitter Card",
-                  "fields": [
-                    {
-                      "name": "title",
-                      "type": "text",
-                      "label": "Twitter Title"
-                    },
-                    {
-                      "name": "description",
-                      "type": "textarea",
-                      "label": "Twitter Description"
-                    },
-                    {
-                      "name": "image",
-                      "type": "upload",
-                      "label": "Twitter Image",
-                      "relationTo": "media"
-                    }
-                  ]
-                },
-                {
-                  "name": "advanced",
-                  "type": "group",
-                  "label": "Advanced Search Settings",
-                  "fields": [
-                    {
-                      "name": "noindex",
-                      "type": "checkbox",
-                      "label": "Hide from search engines (noindex)",
-                      "defaultValue": false
-                    },
-                    {
-                      "name": "nofollow",
-                      "type": "checkbox",
-                      "label": "Do not follow links (nofollow)",
-                      "defaultValue": false
-                    },
-                    {
-                      "name": "canonicalUrl",
-                      "type": "text",
-                      "label": "Canonical URL Override",
-                      "admin": {
-                        "description": "Leave empty to use the default canonical URL."
-                      }
-                    },
-                    {
-                      "name": "structuredData",
-                      "type": "code",
-                      "label": "JSON-LD Structured Data",
-                      "admin": {
-                        "description": "Custom JSON-LD schema for this specific page."
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "slug",
-          "type": "text",
-          "required": true,
-          "label": "Slug",
-          "admin": {
-            "position": "sidebar",
-            "autoGenerate": "title"
-          }
-        }
-      ],
-      "timestamps": true,
-      "versions": {
-        "drafts": true
-      }
     },
     {
       "versions": {
@@ -5315,6 +5097,33 @@
           "admin": {}
         },
         {
+          "name": "defaultLanguage",
+          "type": "select",
+          "label": "Default Language",
+          "defaultValue": "en",
+          "options": [
+            {
+              "label": "English",
+              "value": "en"
+            },
+            {
+              "label": "French",
+              "value": "fr"
+            },
+            {
+              "label": "Spanish",
+              "value": "es"
+            },
+            {
+              "label": "German",
+              "value": "de"
+            }
+          ],
+          "admin": {
+            "description": "The default language for the site and admin UI."
+          }
+        },
+        {
           "name": "analyticsEnabled",
           "type": "checkbox",
           "label": "Enable Analytics & Tracking",
@@ -5819,6 +5628,15 @@
               "type": "upload",
               "label": "Favicon",
               "relationTo": "media"
+            },
+            {
+              "name": "showSiteName",
+              "type": "checkbox",
+              "label": "Show Sitename in Brand Identity",
+              "defaultValue": true,
+              "admin": {
+                "description": "Show the sitename side by side with the logo in the sidebar menu area."
+              }
             }
           ]
         },
@@ -6715,16 +6533,6 @@
           }
         },
         {
-          "name": "encryptionKey",
-          "type": "text",
-          "label": "Encryption Key",
-          "required": false,
-          "admin": {
-            "description": "Auto-generated key for data encryption at rest.",
-            "readOnly": true
-          }
-        },
-        {
           "name": "sessionMaxAge",
           "type": "number",
           "label": "Session Max Age (days)",
@@ -6777,5 +6585,6 @@
         }
       }
     }
-  }
+  },
+  "plugins": []
 }

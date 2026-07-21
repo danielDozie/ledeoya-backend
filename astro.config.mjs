@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import { kyro } from '@kyro-cms/core';
-import { kyroAdmin } from '@kyro-cms/admin';
+import { kyroAdmin } from "@kyro-cms/admin";
 import react from '@astrojs/react';
 import tailwind from '@tailwindcss/vite';
 import node from '@astrojs/node';  
@@ -35,7 +35,6 @@ export default defineConfig({
     },
     optimizeDeps: {
       include: [
-        "@kyro-cms/admin",
         "lowlight", "highlight.js", "highlight.js/lib/core", "highlight.js/lib/languages/*",
       ],
     },
