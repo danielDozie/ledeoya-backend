@@ -34,9 +34,13 @@ export default defineConfig({
       external: ["better-sqlite3", "pg", "mongodb", "ioredis", "sharp"],
     },
     optimizeDeps: {
-      include: [
-        "lowlight", "highlight.js", "highlight.js/lib/core", "highlight.js/lib/languages/*",
-      ],
+      include: [],
+    },
+    server: {
+      fs: {
+        strict: false,
+        allow: ['..'],
+      },
     },
   },
   server: {

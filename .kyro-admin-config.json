@@ -30,7 +30,6 @@
           }
         },
         {
-          "name": "tabs",
           "type": "tabs",
           "tabs": [
             {
@@ -286,7 +285,6 @@
           }
         },
         {
-          "name": "tabs",
           "type": "tabs",
           "tabs": [
             {
@@ -4416,6 +4414,11 @@
                       "equals": "external"
                     }
                   }
+                },
+                {
+                  "name": "label",
+                  "type": "text",
+                  "label": "Label (Optional)"
                 }
               ]
             }
@@ -4744,31 +4747,27 @@
           "options": [
             {
               "label": "Africa",
-              "value": "africa"
+              "value": "Africa"
             },
             {
-              "label": "Antarctica",
-              "value": "antarctica"
+              "label": "Americas",
+              "value": "Americas"
             },
             {
               "label": "Asia",
-              "value": "asia"
+              "value": "Asia"
             },
             {
               "label": "Europe",
-              "value": "europe"
-            },
-            {
-              "label": "North America",
-              "value": "north-america"
+              "value": "Europe"
             },
             {
               "label": "Oceania",
-              "value": "oceania"
+              "value": "Oceania"
             },
             {
-              "label": "South America",
-              "value": "south-america"
+              "label": "Antarctica",
+              "value": "Antarctica"
             }
           ],
           "admin": {
@@ -6051,11 +6050,15 @@
               "value": "local"
             },
             {
+              "label": "Cloudflare Native Assets (R2 Binding)",
+              "value": "cloudflare_r2"
+            },
+            {
               "label": "S3 Compatible (AWS, Backblaze, Wasabi, etc.)",
               "value": "aws"
             },
             {
-              "label": "Cloudflare R2",
+              "label": "Cloudflare R2 (S3 API)",
               "value": "r2"
             },
             {
@@ -6090,6 +6093,28 @@
               "type": "text",
               "label": "Base URL",
               "defaultValue": "/uploads"
+            }
+          ]
+        },
+        {
+          "name": "cloudflare_r2",
+          "type": "group",
+          "label": "Cloudflare Native Assets (R2 Binding) Settings",
+          "admin": {
+            "condition": {
+              "field": "provider",
+              "equals": "cloudflare_r2"
+            }
+          },
+          "fields": [
+            {
+              "name": "note",
+              "type": "text",
+              "label": "Storage Status",
+              "defaultValue": "Cloudflare R2 Native Binding ('STORAGE_BUCKET') active.",
+              "admin": {
+                "readOnly": true
+              }
             }
           ]
         },
@@ -6160,7 +6185,7 @@
         {
           "name": "r2",
           "type": "group",
-          "label": "Cloudflare R2 Settings",
+          "label": "Cloudflare R2 (S3 API) Settings",
           "admin": {
             "condition": {
               "field": "provider",
@@ -6550,6 +6575,44 @@
           "defaultValue": 3,
           "admin": {
             "description": "Maximum concurrent sessions allowed per user"
+          }
+        },
+        {
+          "name": "enableRegistration",
+          "type": "checkbox",
+          "label": "Enable User Registration",
+          "required": false,
+          "defaultValue": true,
+          "admin": {
+            "description": "Allow new users to register and create accounts"
+          }
+        },
+        {
+          "name": "defaultRegistrationRole",
+          "type": "select",
+          "label": "Default Registration Role",
+          "required": false,
+          "defaultValue": "customer",
+          "options": [
+            {
+              "label": "Customer",
+              "value": "customer"
+            },
+            {
+              "label": "Author",
+              "value": "author"
+            },
+            {
+              "label": "Editor",
+              "value": "editor"
+            },
+            {
+              "label": "Admin",
+              "value": "admin"
+            }
+          ],
+          "admin": {
+            "description": "The role automatically assigned to newly registered users (e.g. customer, author, editor)"
           }
         }
       ]
