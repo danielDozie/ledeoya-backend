@@ -1,2 +1,0 @@
-patchedDependencies:
-  '@kyro-cms/admin': patches/@kyro-cms__admin.patch
