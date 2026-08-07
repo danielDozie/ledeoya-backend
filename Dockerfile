@@ -30,4 +30,4 @@ COPY --from=build /app /app
 ENV NODE_ENV=production
 
 EXPOSE 4321
-CMD ["pnpm", "preview", "--host", "0.0.0.0", "--port", "4321"]
+CMD ["pnpm", "start", "--host", "0.0.0.0", "--port", "4321"]
