@@ -5,6 +5,21 @@ import react from '@astrojs/react';
 import tailwind from '@tailwindcss/vite';
 import node from '@astrojs/node';
 
+// Vite plugin to fix CommonJS module.exports in @kyro-cms/admin virtual debug module for ES Module SSR target
+const fixKyroDebugCjsPlugin = {
+  name: 'fix-kyro-debug-cjs',
+  renderChunk(code) {
+    if (code.includes('module.exports = debug;')) {
+      return {
+        code: code.replace(
+          'module.exports = debug;',
+          'if (typeof module !== "undefined" && module.exports) { module.exports = debug; } export default debug;'
+        ),
+        map: null,
+      };
+    }
+  },
+};
 
 export default defineConfig({
   output: 'server',
@@ -18,7 +33,8 @@ export default defineConfig({
   ],
   vite: {
     plugins: [
-      tailwind()
+      tailwind(),
+      fixKyroDebugCjsPlugin,
     ],
     optimizeDeps: {
       include: [],
