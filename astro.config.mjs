@@ -8,15 +8,28 @@ import node from '@astrojs/node';
 // Vite plugin to fix CommonJS module.exports in @kyro-cms/admin virtual debug module for ES Module SSR target
 const fixKyroDebugCjsPlugin = {
   name: 'fix-kyro-debug-cjs',
-  renderChunk(code) {
-    if (code.includes('module.exports = debug;')) {
-      return {
-        code: code.replace(
-          'module.exports = debug;',
-          'if (typeof module !== "undefined" && module.exports) { module.exports = debug; } export default debug;'
-        ),
-        map: null,
-      };
+  enforce: 'pre',
+  resolveId(id) {
+    if (id === 'debug' || id.includes('debug/src/browser.js') || id === '\0debug-browser') {
+      return '\0debug-browser-fixed';
+    }
+  },
+  load(id) {
+    if (id === '\0debug-browser-fixed') {
+      return `
+var module = { exports: {} };
+function debug(namespace) {
+  function d(...args) {}
+  d.enabled = false;
+  return d;
+}
+debug.enable = function() {};
+debug.disable = function() {};
+debug.enabled = function() { return false; };
+debug.default = debug;
+module.exports = debug;
+export default debug;
+`;
     }
   },
 };
@@ -33,8 +46,8 @@ export default defineConfig({
   ],
   vite: {
     plugins: [
-      tailwind(),
       fixKyroDebugCjsPlugin,
+      tailwind(),
     ],
     optimizeDeps: {
       include: [],
