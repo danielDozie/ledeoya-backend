@@ -4,12 +4,11 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "start": "HOST=0.0.0.0 PORT=4321 node ./dist/server/entry.mjs",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
     "kyro:dev": "kyro dev",
-    "kyro:generate": "kyro generate",
-    "start": "node ./dist/server/entry.mjs"
+    "kyro:generate": "kyro generate"
   },
   "dependencies": {
     "@astrojs/node": "^10.1.4",
