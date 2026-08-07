@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "HOST=0.0.0.0 PORT=4321 node --env-file=.env ./dist/server/entry.mjs",
+    "start": "HOST=0.0.0.0 PORT=4321 node ./dist/server/entry.mjs",
+    "start:local": "HOST=0.0.0.0 PORT=4321 node --env-file=.env ./dist/server/entry.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "kyro:dev": "kyro dev",
