@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "kyro:dev": "kyro dev",
-    "kyro:generate": "kyro generate"
+    "kyro:generate": "kyro generate",
+    "start": "node ./dist/server/entry.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^10.1.4",
