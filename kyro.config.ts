@@ -8,7 +8,7 @@ import { tripsCollection } from "@/ledeoyaCollections/trips";
 export default defineKyroConfig({
   // Adapter config: connect Kyro CMS to the database using Drizzle ORM.
   adapter: createDrizzleAdapter({
-    // This is backend-only and is not shown in the admin UI.
+    type: 'postgres',
     connectionString: process.env.DATABASE_URL,
   }),
   admin: {
