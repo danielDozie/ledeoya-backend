@@ -15,7 +15,11 @@ export default defineConfig({
     kyro({ adminPath: '/admin', apiPath: '/api' }),
     kyroAdmin({ basePath: '/admin', apiPath: '/api' })
   ],
+  site: process.env.APP_URL || 'http://localhost:4321',
   vite: {
+    ssr: {
+      external: ['debug', 'send']
+    },
     plugins: [
       tailwind(),
     ],
