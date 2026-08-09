@@ -4,6 +4,12 @@ import { messagesCollection } from "@/ledeoyaCollections/messages";
 import { servicesCollection } from "@/ledeoyaCollections/services";
 import { destinationsCollection } from "@/ledeoyaCollections/destination";
 import { tripsCollection } from "@/ledeoyaCollections/trips";
+import { AiAssistantPlugin, AiAutoSeoPlugin } from "@kyro-cms/ai";
+import { createGroq } from '@ai-sdk/groq';
+
+const groq = createGroq({
+  apiKey: process.env.GROQ_API_KEY,
+});
 
 export default defineKyroConfig({
   // Adapter config: connect Kyro CMS to the database using Drizzle ORM.
@@ -40,7 +46,6 @@ export default defineKyroConfig({
     tripsCollection,
     destinationsCollection,
     servicesCollection,
-    //testimonialsCollection,
     messagesCollection,
   ],
   // Add global settings fields from Kyro core templates.
@@ -50,4 +55,15 @@ export default defineKyroConfig({
   auth: {
     secret: process.env.APP_SECRET,
   },
+  plugins: [
+    new AiAutoSeoPlugin({
+      collections: ['posts', 'pages'],
+      provider: groq,
+      modelName: 'llama-3.3-70b-versatile',
+    }),
+    new AiAssistantPlugin({
+      provider: groq,
+      modelName: 'llama-3.1-8b-instant',
+    })
+  ],
 });

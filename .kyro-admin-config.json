@@ -6649,5 +6649,12 @@
       }
     }
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "ai-auto-seo"
+    },
+    {
+      "name": "ai-assistant"
+    }
+  ]
 }
