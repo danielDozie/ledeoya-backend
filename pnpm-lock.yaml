@@ -18,23 +18,23 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2(@types/node@26.2.0)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(esbuild@0.28.1)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@kyro-cms/admin':
-        specifier: 0.12.64
-        version: 0.12.64(@babel/runtime@7.29.7)(@codemirror/language@6.12.4)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.1)(@codemirror/theme-one-dark@6.1.3)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@floating-ui/dom@1.8.0)(@kyro-cms/core@0.12.64)(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@types/node@26.2.0)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(codemirror@6.0.2)(esbuild@0.28.1)(graphql@16.14.2)(immer@11.1.16)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react-is@19.2.8)(react@19.2.8)(redux@5.0.1)(typescript@5.9.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0))(wrangler@4.120.0)
+        specifier: 0.12.65
+        version: 0.12.65(@babel/runtime@7.29.7)(@codemirror/language@6.12.4)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.1)(@codemirror/theme-one-dark@6.1.3)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@floating-ui/dom@1.8.0)(@kyro-cms/core@0.12.65)(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@types/node@26.2.0)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(codemirror@6.0.2)(esbuild@0.28.1)(graphql@16.14.2)(immer@11.1.16)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react-is@19.2.8)(react@19.2.8)(redux@5.0.1)(typescript@5.9.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0))(wrangler@4.120.0)
       '@kyro-cms/ai':
-        specifier: 0.12.64
-        version: 0.12.64(@kyro-cms/admin@0.12.64)(@kyro-cms/core@0.12.64)(react@19.2.8)
+        specifier: 0.12.65
+        version: 0.12.65(@kyro-cms/admin@0.12.65)(@kyro-cms/core@0.12.65)(react@19.2.8)
       '@kyro-cms/astro':
-        specifier: 0.12.64
-        version: 0.12.64(@kyro-cms/core@0.12.64)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))
+        specifier: 0.12.65
+        version: 0.12.65(@kyro-cms/core@0.12.65)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))
       '@kyro-cms/connect':
-        specifier: 0.12.64
-        version: 0.12.64
+        specifier: 0.12.65
+        version: 0.12.65
       '@kyro-cms/core':
-        specifier: 0.12.64
-        version: 0.12.64(@kyro-cms/admin@0.12.64)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
+        specifier: 0.12.65
+        version: 0.12.65(@kyro-cms/admin@0.12.65)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
       '@kyro-cms/field-locations':
-        specifier: 0.12.64
-        version: 0.12.64(@kyro-cms/core@0.12.64)
+        specifier: 0.12.65
+        version: 0.12.65(@kyro-cms/core@0.12.65)
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0))
@@ -1369,33 +1369,33 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@kyro-cms/admin@0.12.64':
-    resolution: {integrity: sha512-EX0EUg0n2I9hM+H1jDJL7Zs/n4gi/mg8McmIQw5IBS+DLmejZSkalcuVrtEySnUNvNhT8P2K3ZFq/8TZfgsEEw==}
+  '@kyro-cms/admin@0.12.65':
+    resolution: {integrity: sha512-9hxo9lfKt0lJ3H91TG5IReILo8w6W+PB8Ml32KBHtxwE42F/7xdl0iWJP3tZzQ0WiAqm8Y7bSWEK6njgIA387g==}
     engines: {node: '>=22'}
     peerDependencies:
-      '@kyro-cms/core': 0.12.64
+      '@kyro-cms/core': 0.12.65
       react: ^19.0.0
       react-dom: ^19.0.0
 
-  '@kyro-cms/ai@0.12.64':
-    resolution: {integrity: sha512-YDzo/FUMUy8AE++Bzba6cIKeeX/4IEz0B7mZCQlscB5c3Aqo+FZDCAF0o9oENR8VqFJWjPaqTC80dbbAbd28qw==}
+  '@kyro-cms/ai@0.12.65':
+    resolution: {integrity: sha512-dlTZO8vL8NzKD5iTG2IYYsnVj0IcOJKtKkj9amO9Q1xSJXIf8rPAKS7Qn0GgvF4ZAkCh33A5f37yCykAuRX+zQ==}
     peerDependencies:
-      '@kyro-cms/admin': 0.12.64
-      '@kyro-cms/core': 0.12.64
+      '@kyro-cms/admin': 0.12.65
+      '@kyro-cms/core': 0.12.65
       react: ^18.0.0
 
-  '@kyro-cms/astro@0.12.64':
-    resolution: {integrity: sha512-UuBrUqz7Y7vDi5OOmW/4FSOceuZS4xjOmR7Wf4yRa4XV1RtaUu0PNRn5T1yc5IZvBFvvYXVNPl61qbHNmABqfg==}
+  '@kyro-cms/astro@0.12.65':
+    resolution: {integrity: sha512-oKPPNugRBsY7yzlasBjNRyeUnplMH7b0C/ZzkCtARLBlE6mE+p9PjObWDGWND0mhkXiXQy0jZnXpX5p9c8zNjw==}
     peerDependencies:
-      '@kyro-cms/core': 0.12.64
+      '@kyro-cms/core': 0.12.65
       astro: ^7.1.1
 
-  '@kyro-cms/connect@0.12.64':
-    resolution: {integrity: sha512-eRtT361TptvV0jIyovP56pAVNkog35Y/ARk671GUdAEbkZ/EWbVmvxDt0aXuVcl+/0aOwaMrA2L7xrnzVnNzyA==}
+  '@kyro-cms/connect@0.12.65':
+    resolution: {integrity: sha512-zuPJNh2QN+N2yrWNzgeqlj0v/4HAJ2Ig4P3Asr9RnNVhO3wrldiYcbnvYypH0iZMzQoFYPO08kmUXFCQoIJFqg==}
     hasBin: true
 
-  '@kyro-cms/core@0.12.64':
-    resolution: {integrity: sha512-qTD1tTNWXK/HqfAre1rI30+V51Cd+UQOS1zqR7XprRud+E40rOXFxqws16xoC+JrEBAzNqc/Km39lTuShPXO2g==}
+  '@kyro-cms/core@0.12.65':
+    resolution: {integrity: sha512-2hyUbKbc3IzZ1lCG3vc0htAa7GAmEOQZ5q3B305l6XoidJ+nDdstss70TRCCR8kgzmYzaoMPUWsZknwvptVYAw==}
     engines: {node: '>=22'}
     hasBin: true
     peerDependencies:
@@ -1416,10 +1416,10 @@ packages:
       ssh2-sftp-client:
         optional: true
 
-  '@kyro-cms/field-locations@0.12.64':
-    resolution: {integrity: sha512-JXdTg/QIvV1iaR272xat+jfva9dcOgTmwtdw8CoiRrcMp+du5rjecIZtNYaXvPinOD90dXW/qtz3Gk7DCPCXxQ==}
+  '@kyro-cms/field-locations@0.12.65':
+    resolution: {integrity: sha512-dfuMh7b4/Vudmsf6UbMeZdPaPf3KTMwFsBuelmmEQopbtKHdLaUjnHV/3WKR99k1B+5tZFyWB6VR1+aoI+UMOg==}
     peerDependencies:
-      '@kyro-cms/core': 0.12.64
+      '@kyro-cms/core': 0.12.65
 
   '@lezer/common@1.5.2':
     resolution: {integrity: sha512-sxQE460fPZyU3sdc8lafxiPwJHBzZRy/udNFynGQky1SePYBdhkBl1kOagA9uT3pxR8K09bOrmTUqA9wb/PjSQ==}
@@ -5546,7 +5546,7 @@ snapshots:
       '@tanstack/react-virtual': 3.14.9(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
-      use-sync-external-store: 1.5.0(react@19.2.8)
+      use-sync-external-store: 1.6.0(react@19.2.8)
 
   '@img/colour@1.1.0': {}
 
@@ -5786,7 +5786,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kyro-cms/admin@0.12.64(@babel/runtime@7.29.7)(@codemirror/language@6.12.4)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.1)(@codemirror/theme-one-dark@6.1.3)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@floating-ui/dom@1.8.0)(@kyro-cms/core@0.12.64)(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@types/node@26.2.0)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(codemirror@6.0.2)(esbuild@0.28.1)(graphql@16.14.2)(immer@11.1.16)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react-is@19.2.8)(react@19.2.8)(redux@5.0.1)(typescript@5.9.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0))(wrangler@4.120.0)':
+  '@kyro-cms/admin@0.12.65(@babel/runtime@7.29.7)(@codemirror/language@6.12.4)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.1)(@codemirror/theme-one-dark@6.1.3)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@floating-ui/dom@1.8.0)(@kyro-cms/core@0.12.65)(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@types/node@26.2.0)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(codemirror@6.0.2)(esbuild@0.28.1)(graphql@16.14.2)(immer@11.1.16)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react-is@19.2.8)(react@19.2.8)(redux@5.0.1)(typescript@5.9.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0))(wrangler@4.120.0)':
     dependencies:
       '@astrojs/cloudflare': 14.2.0(@types/node@26.2.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(esbuild@0.28.1)(jiti@2.7.0)(wrangler@4.120.0)
       '@astrojs/node': 11.1.0(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))
@@ -5809,8 +5809,8 @@ snapshots:
       '@dnd-kit/sortable': 10.0.0(@dnd-kit/core@6.3.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
       '@dnd-kit/utilities': 3.2.2(react@19.2.8)
       '@graphiql/react': 0.37.7(@types/node@26.2.0)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(graphql@16.14.2)(immer@11.1.16)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(use-sync-external-store@1.5.0(react@19.2.8))
-      '@kyro-cms/astro': 0.12.64(@kyro-cms/core@0.12.64)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))
-      '@kyro-cms/core': 0.12.64(@kyro-cms/admin@0.12.64)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
+      '@kyro-cms/astro': 0.12.65(@kyro-cms/core@0.12.65)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))
+      '@kyro-cms/core': 0.12.65(@kyro-cms/admin@0.12.65)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
       '@tailwindcss/vite': 4.3.3(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0))
       '@tiptap/extension-color': 3.29.2(@tiptap/extension-text-style@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2)))
       '@tiptap/extension-highlight': 3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))
@@ -5907,29 +5907,29 @@ snapshots:
       - wrangler
       - yaml
 
-  '@kyro-cms/ai@0.12.64(@kyro-cms/admin@0.12.64)(@kyro-cms/core@0.12.64)(react@19.2.8)':
+  '@kyro-cms/ai@0.12.65(@kyro-cms/admin@0.12.65)(@kyro-cms/core@0.12.65)(react@19.2.8)':
     dependencies:
       '@ai-sdk/openai': 0.0.14(zod@3.25.76)
-      '@kyro-cms/admin': 0.12.64(@babel/runtime@7.29.7)(@codemirror/language@6.12.4)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.1)(@codemirror/theme-one-dark@6.1.3)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@floating-ui/dom@1.8.0)(@kyro-cms/core@0.12.64)(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@types/node@26.2.0)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(codemirror@6.0.2)(esbuild@0.28.1)(graphql@16.14.2)(immer@11.1.16)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react-is@19.2.8)(react@19.2.8)(redux@5.0.1)(typescript@5.9.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0))(wrangler@4.120.0)
-      '@kyro-cms/core': 0.12.64(@kyro-cms/admin@0.12.64)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
+      '@kyro-cms/admin': 0.12.65(@babel/runtime@7.29.7)(@codemirror/language@6.12.4)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.1)(@codemirror/theme-one-dark@6.1.3)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@floating-ui/dom@1.8.0)(@kyro-cms/core@0.12.65)(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@types/node@26.2.0)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(codemirror@6.0.2)(esbuild@0.28.1)(graphql@16.14.2)(immer@11.1.16)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react-is@19.2.8)(react@19.2.8)(redux@5.0.1)(typescript@5.9.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0))(wrangler@4.120.0)
+      '@kyro-cms/core': 0.12.65(@kyro-cms/admin@0.12.65)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
       ai: 7.0.58(zod@3.25.76)
       react: 19.2.8
       zod: 3.25.76
 
-  '@kyro-cms/astro@0.12.64(@kyro-cms/core@0.12.64)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))':
+  '@kyro-cms/astro@0.12.65(@kyro-cms/core@0.12.65)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))':
     dependencies:
-      '@kyro-cms/core': 0.12.64(@kyro-cms/admin@0.12.64)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
+      '@kyro-cms/core': 0.12.65(@kyro-cms/admin@0.12.65)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
       astro: 7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0)
 
-  '@kyro-cms/connect@0.12.64': {}
+  '@kyro-cms/connect@0.12.65': {}
 
-  '@kyro-cms/core@0.12.64(@kyro-cms/admin@0.12.64)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)':
+  '@kyro-cms/core@0.12.65(@kyro-cms/admin@0.12.65)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)':
     dependencies:
       '@ai-sdk/groq': 4.0.26(zod@3.25.76)
       '@ai-sdk/openai': 0.0.14(zod@3.25.76)
       '@aws-sdk/client-s3': 3.1106.0
       '@aws-sdk/s3-request-presigner': 3.1106.0
-      '@kyro-cms/ai': 0.12.64(@kyro-cms/admin@0.12.64)(@kyro-cms/core@0.12.64)(react@19.2.8)
+      '@kyro-cms/ai': 0.12.65(@kyro-cms/admin@0.12.65)(@kyro-cms/core@0.12.65)(react@19.2.8)
       '@smithy/node-http-handler': 4.9.13
       '@tiptap/core': 3.29.2(@tiptap/pm@3.29.2)
       '@tiptap/extension-color': 3.29.2(@tiptap/extension-text-style@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2)))
@@ -6026,9 +6026,9 @@ snapshots:
       - uploadthing
       - utf-8-validate
 
-  '@kyro-cms/field-locations@0.12.64(@kyro-cms/core@0.12.64)':
+  '@kyro-cms/field-locations@0.12.65(@kyro-cms/core@0.12.65)':
     dependencies:
-      '@kyro-cms/core': 0.12.64(@kyro-cms/admin@0.12.64)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
+      '@kyro-cms/core': 0.12.65(@kyro-cms/admin@0.12.65)(@tanstack/react-query@5.101.4(react@19.2.8))(@tiptap/extension-list@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)(@types/pg@8.21.0)(astro@7.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(idb-keyval@6.3.0)(jiti@2.7.0))(happy-dom@20.11.2)(react@19.2.8)(typescript@5.9.3)
 
   '@lezer/common@1.5.2': {}
 
@@ -6847,7 +6847,7 @@ snapshots:
       fast-equals: 5.4.1
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
-      use-sync-external-store: 1.5.0(react@19.2.8)
+      use-sync-external-store: 1.6.0(react@19.2.8)
     optionalDependencies:
       '@tiptap/extension-bubble-menu': 3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)
       '@tiptap/extension-floating-menu': 3.29.2(@floating-ui/dom@1.8.0)(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2)
@@ -8414,7 +8414,7 @@ snapshots:
     dependencies:
       '@types/use-sync-external-store': 0.0.6
       react: 19.2.8
-      use-sync-external-store: 1.5.0(react@19.2.8)
+      use-sync-external-store: 1.6.0(react@19.2.8)
     optionalDependencies:
       '@types/react': 19.2.18
       redux: 5.0.1
@@ -8476,7 +8476,7 @@ snapshots:
       react-redux: 9.3.0(@types/react@19.2.18)(react@19.2.8)(redux@5.0.1)
       reselect: 5.2.0
       tiny-invariant: 1.3.3
-      use-sync-external-store: 1.5.0(react@19.2.8)
+      use-sync-external-store: 1.6.0(react@19.2.8)
       victory-vendor: 37.3.6
     transitivePeerDependencies:
       - '@types/react'
