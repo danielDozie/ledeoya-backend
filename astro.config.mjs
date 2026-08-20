@@ -17,21 +17,9 @@ export default defineConfig({
   ],
   site: process.env.APP_URL || 'http://localhost:4321',
   vite: {
-    ssr: {
-      external: ['debug', 'send']
-    },
     plugins: [
-      tailwind(),
-    ],
-    optimizeDeps: {
-      include: [],
-    },
-    server: {
-      fs: {
-        strict: false,
-        allow: ['..'],
-      },
-    },
+      tailwind()
+    ]
   },
   server: {
     port: 4321,
